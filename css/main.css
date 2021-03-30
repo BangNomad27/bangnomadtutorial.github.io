@@ -1,0 +1,469 @@
+/*
+	Global CSS - 03/2021
+	CSS Sistem Reset oleh BangNomad.
+
+	Copyright 2021. All Right Reserved.
+*/
+
+/* ! CSS Reset */
+:root {
+	--heightSize: 100vh;
+	--mainColor: #111;
+	--btnColor1: #2196f3;
+	--btnColor2: #d44;
+	--bgColor: #f1f2f6;
+	--margin: 3.5rem auto 0;
+	--marginTop: 2rem;
+	--padding1: 1rem;
+	--padding2: 1rem 2rem;
+	--bxShadow: 0 1rem 2rem rgba(0,0,0,.3);
+	--borderRadius: 50%;
+	--fontWeight: lighter;
+}
+* {
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	font-family: verdana, geneva, tahoma, arial, sans-serif;
+	outline: none; resize: none;
+	list-style: none; text-decoration: none;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	background: var(--bgColor);
+}
+section {
+	position: relative;
+	width: 100%;
+	background: var(--bgColor);
+	padding: 10rem;
+}
+
+/* ! All */
+/* * Button Home */
+.btn-home {
+	position: fixed;
+	bottom: 5rem; right: 7rem;
+	z-index: 10;
+}
+.btn-home .home {
+	position: relative;
+	background: #333;
+	border-radius: var(--borderRadius);
+}
+.btn-home .home a {
+	display: block;
+	background: rgba(44,62,80,1);
+	color: rgba(255,255,255,1);
+	font-size: 3rem;
+	padding: var(--padding1);
+	border-radius: var(--borderRadius);
+	cursor: pointer;
+}
+.btn-home .home a:hover {
+	background: transparent;
+}
+.disabled {
+	pointer-events: none;
+	cursor: default;
+}
+/* * Heading */
+.heading {
+	width: 100%;
+	margin-bottom: 3rem;
+	color: var(--mainColor);
+	text-align: center;
+}
+.heading .head {
+	font-size: 2.5rem;
+	font-weight: var(--fontWeight);
+}
+.heading .head::after {
+	content: '';
+	display: block;
+	width: 20%;
+	margin: auto;
+	padding-bottom: var(--padding1);
+	border-bottom: .2rem solid var(--btnColor1);
+}
+/* * Publik Button */
+.btn-btn {
+	display: inline-block;
+	background: var(--btnColor1);
+	color: #fff;
+	margin-top: 2rem;
+	margin-right: 2rem;
+	padding: var(--padding2);
+	font-size: 1.7rem;
+	border-radius: 1rem;
+}
+.btn-btn:hover {
+	background: rgba(33,150,243,.8);
+}
+/* * Button Box */
+.btn-box {
+	display: flex;
+	border-bottom: .1rem solid #ccc;
+}
+.btn-box button {
+	background: transparent;
+	border: none; outline: none;
+	margin-right: 2rem;
+	padding: 1.4rem .6rem;
+	font-size: 1.7rem;
+	font-weight: var(--fontWeight);
+	cursor: pointer;
+}
+.btn-box button .bx {
+	margin-right: 1rem;
+}
+/* * Button Group */
+.box-left .btn-group {
+	display: flex;
+	flex-flow: wrap;
+	margin-top: 2rem;
+}
+.box-left .btn-group .btn {
+	background: var(--btnColor1);
+	color: #fff;
+	margin: 0 1.5rem 0 0;
+	padding: 1rem;
+	font-size: 1.7rem;
+	letter-spacing: .1rem;
+	border-radius: 1rem;
+}
+.box-left .btn-group .btn:hover {
+	background: rgba(33,150,243,.8);
+}
+
+/* ! Header */
+header {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3rem 10rem;
+	transition: .3s;
+	z-index: 5;
+}
+header.sticky {
+	background: var(--bgColor);
+	padding: 2rem 10rem;
+	box-shadow: var(--bxShadow);
+}
+header .brand {
+	color: var(--mainColor);
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: var(--fontWeight);
+	letter-spacing: .1rem;
+}
+header .brand span {
+	color: var(--btnColor1);
+}
+header .navbar ul {
+	position: relative;
+	display: flex;
+}
+header .navbar ul li {
+	position: relative;
+}
+header .navbar ul li a {
+	position: relative;
+	color: var(--mainColor);
+	display: inline-block;
+	margin: 0 1rem;
+	padding: var(--padding1);
+	font-size: 1.5rem;
+	font-weight: var(--fontWeight);
+}
+header .navbar ul li a:hover {
+	color: #d44;
+}
+header .navbar ul :is(li:nth-child(6) a, li:nth-child(7) a) {
+	background: var(--btnColor1);
+	color: #fff;
+	border-radius: 1rem;
+}
+header .navbar ul :is(li:nth-child(6) a, li:nth-child(7) a):hover {
+	background: rgba(33,150,243,.8);
+}
+
+/* ! Container */
+.container {
+	position: relative;
+	width: 100%;
+	min-height: var(--heightSize);
+}
+/* * Opening */
+.opening {
+	padding: 15rem 10rem 0;
+}
+.opening .titleBx {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.opening .titleBx .title {
+	color: var(--mainColor);
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	font-weight: var(--fontWeight);
+	letter-spacing: .2rem;
+}
+.opening .titleBx .title span {
+	color: var(--btnColor1);
+}
+.opening .titleBx .version {
+	color: var(--mainColor);
+	font-size: 2rem;
+	font-weight: var(--fontWeight);
+}
+.opening .textBx p {
+	font-size: 1.7rem;
+	text-align: justify;
+}
+.opening .share {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: wrap;
+	margin-top: 5rem;
+}
+.opening .share .update {
+	align-self: flex-start;
+	position: relative;
+	margin-top: var(--marginTop);
+}
+.opening .share .update .title {
+	color: var(--mainColor);
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	font-weight: var(--fontWeight);
+}
+.opening .share .update ul li {
+	margin-left: 3rem;
+	font-size: 1.7rem;
+	line-height: 3rem;
+	list-style: decimal;
+}
+.opening .share .tableBx .table :is(thead th, tbody th) {
+	padding: var(--padding1);
+	font-size: 1.7rem;
+	font-weight: var(--fontWeight);
+}
+/* * Notice */
+.notice {
+	position: relative;
+	max-width: 40rem;
+	height: 10rem;
+	background: #f1f2f6;
+	margin: var(--margin);
+	border-radius: 1rem;
+	box-shadow: var(--bxShadow);
+	z-index: 2;
+}
+.notice .noteBx {
+	position: relative;
+	text-align: center;
+	padding: 1rem;
+}
+.notice .noteBx .note-head {
+	padding-bottom: 0.5rem;
+	color: var(--btnColor2);
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+}
+.notice .noteBx p {
+	margin-top: 2rem;
+	font-size: 1.3rem;
+}
+.notice .noteBx a {
+	color: var(--btnColor1);
+}
+.notice .noteBx a:hover {
+	color: var(--btnColor2);
+}
+/* * About */
+.about {
+	padding-bottom: 0;
+}
+.about .aboutBx {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.about .aboutBx .textBx {
+	order: 2;
+	margin-left: 7rem;
+}
+.about .aboutBx .textBx .title {
+	font-size: 2rem;
+	font-weight: var(--fontWeight);
+	margin-bottom: .5rem;
+}
+.about .aboutBx .textBx p {
+	text-align: justify;
+	font-size: 1.7rem;
+}
+.about .width {
+	order: 1;
+	min-width: 20%;
+}
+.about .aboutBx .imgBx img {
+	position: relative;
+	width: 100%;
+	object-fit: cover;
+	border-radius: var(--borderRadius);
+	box-shadow: var(--bxShadow);
+	filter: brightness(1.05) contrast(1.2);
+}
+/* * Content */
+.content {
+	width: 100%;
+	height: 770px;
+	position: relative;
+	overflow: hidden;
+}
+.content .box {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5% auto; /* 2% */
+	transform: translateX(100%);
+	transition: .3s;
+}
+.content .box .box-left {
+	padding: 0 2rem 0 0;
+}
+.content .box .box-left .title {
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	font-weight: var(--fontWeight);
+}
+.content .box .box-left p {
+	font-size: 1.7rem;
+	text-align: justify;
+	padding: 1rem 0;
+}
+.content .box .box-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 40%;
+	height: 40rem;
+	margin-right: 10rem;
+	border: .5rem solid #222;
+}
+.content .box .box-right .logo {
+	color: #222;
+	font-size: 4rem;
+	text-shadow: 0 .2rem .2rem #fff;
+}
+.content :is(#content1) {
+	transform: translateX(0);
+}
+#btn1 { color: #ff7846; }
+
+/* * Front-End */
+.fe .btn-box button:hover:nth-child(1) .bx { color: #ff7846; }
+.fe .btn-box button:hover:nth-child(2) .bx { color: var(--btnColor1); }
+.fe .btn-box button:hover:nth-child(3) .bx { color: #ffd700; }
+.fe .btn-box button:hover:nth-child(4) .bx { color: #00f; }
+.box-right.box1 { background: #ff7846; }
+.box-right.box2 { background: var(--btnColor1); }
+.box-right.box3 { background: #ffd700; }
+.content .box .box-right.box4 { background: #333; border: .5rem solid var(--btnColor1); }
+.content .box .box-right.box4 .logo {
+	color: #2196f3;
+}
+
+/* ! Footer */
+footer {
+	position: relative;
+	background: var(--mainColor);
+	padding: 5rem;
+}
+footer .icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3rem;
+	filter: invert(1);
+}
+footer .icon li:not(:last-child) {
+	margin-right: 3rem;
+}
+footer .icon li img {
+	opacity: 1;
+	transform: scale(.7);
+}
+footer .icon li img:hover {
+	opacity: .7;
+}
+footer .copy {
+	text-align: center;
+	color: #fff;
+	font-size: 1.7rem;
+}
+
+@media screen and (max-width: 991px) {
+	section {
+		padding: 10rem 5rem;
+	}
+	/* ! Header */
+	header, header.sticky {
+		/*color: #fff;*/
+		opacity: 1;
+	}
+	header .navbar {
+		position: fixed;
+		top: 75px; left: -100%;
+		display: block;
+		padding: 10rem 5rem;
+		text-align: center;
+		width: 100%;
+		height: var(--heightSize);
+		background: rgba(255,255,255,1);
+		transition: .5s;
+		border-top: .1rem solid rgba(0,0,0,.2);
+		z-index: 10;
+	}
+	header .navbar.active {
+		left: 0;
+	}
+	header .navbar ul {
+		flex-flow: column;
+	}
+	header .navbar ul li a {
+		color: var(--mainColor);
+		font-size: 1.7rem;
+		margin: 1rem;
+	}
+	header .navbar ul li a:active {
+		color: var(--btnColor2);
+	}
+	header .toggle {
+		width: 4rem;
+		height: 4rem;
+		background: url(../img/menu.png) no-repeat;
+		background-position: center;
+		background-size: 30px;
+		color: var(--mainColor);
+		cursor: pointer;
+		transition: .2s;
+	}
+	header .toggle.active {
+		background: url(../img/close.png) no-repeat;
+		background-position: center;
+		background-size: 25px;
+		color: var(--mainColor);
+		cursor: pointer;
+	}
+}
