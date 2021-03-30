@@ -166,45 +166,97 @@ function openJava() {
 // ! ===== Area Database =====
 const content10 = document.getElementById('content10');
 const content11 = document.getElementById('content11');
+const content12 = document.getElementById('content12');
+const content13 = document.getElementById('content13');
+const content14 = document.getElementById('content14');
 const btn10 = document.getElementById('btn10');
 const btn11 = document.getElementById('btn11');
+const btn12 = document.getElementById('btn12');
+const btn13 = document.getElementById('btn13');
+const btn14 = document.getElementById('btn14');
 
 function openMysql() {
   content10.style.transform = 'translateX(0)';
   content11.style.transform = 'translateX(100%)';
+  content12.style.transform = 'translateX(100%)';
+  content13.style.transform = 'translateX(100%)';
+  content14.style.transform = 'translateX(100%)';
   btn10.style.color = '#ff8c00';
   btn11.style.color = '#111';
+  btn12.style.color = '#111';
+  btn13.style.color = '#111';
+  btn14.style.color = '#111';
   content10.style.transitionDelay = '0.3s';
   content11.style.transitionDelay = '0s';
+  content12.style.transitionDelay = '0s';
+  content13.style.transitionDelay = '0s';
+  content14.style.transitionDelay = '0s';
+}
+function openNosql() {
+  content10.style.transform = 'translateX(100%)';
+	content11.style.transform = 'translateX(0)';
+  content12.style.transform = 'translateX(100%)';
+  content13.style.transform = 'translateX(100%)';
+  content14.style.transform = 'translateX(100%)';
+  btn10.style.color = '#111';
+  btn11.style.color = '#00f';
+  btn12.style.color = '#111';
+  btn13.style.color = '#111';
+  btn14.style.color = '#111';
+  content10.style.transitionDelay = '0s';
+  content11.style.transitionDelay = '0.3s';
+  content12.style.transitionDelay = '0s';
+  content13.style.transitionDelay = '0s';
+  content14.style.transitionDelay = '0s';
 }
 function openApi() {
   content10.style.transform = 'translateX(100%)';
-  content11.style.transform = 'translateX(0)';
-  btn10.style.color = '#111';
-  btn11.style.color = '#800000';
-  content10.style.transitionDelay = '0s';
-  content11.style.transitionDelay = '0.3s';
-}
-
-// ! ===== Area VCS =====
-const content12 = document.getElementById('content12');
-const content13 = document.getElementById('content13');
-const btn12 = document.getElementById('btn12');
-const btn13 = document.getElementById('btn13');
-
-function openGithub() {
+  content11.style.transform = 'translateX(100%)';
   content12.style.transform = 'translateX(0)';
   content13.style.transform = 'translateX(100%)';
-  btn12.style.color = '#353b48';
+  content14.style.transform = 'translateX(100%)';
+  btn10.style.color = '#111';
+  btn11.style.color = '#111';
+  btn12.style.color = '#800000';
   btn13.style.color = '#111';
+  btn14.style.color = '#111';
+  content10.style.transitionDelay = '0s';
+  content11.style.transitionDelay = '0s';
   content12.style.transitionDelay = '0.3s';
   content13.style.transitionDelay = '0s';
+  content14.style.transitionDelay = '0s';
 }
-function openGit() {
+function openMongo() {
+	content10.style.transform = 'translateX(100%)';
+  content11.style.transform = 'translateX(100%)';
   content12.style.transform = 'translateX(100%)';
   content13.style.transform = 'translateX(0)';
+  content14.style.transform = 'translateX(100%)';
+  btn10.style.color = '#111';
+  btn11.style.color = '#111';
   btn12.style.color = '#111';
-  btn13.style.color = '#ff0000';
+  btn13.style.color = '#080';
+  btn14.style.color = '#111';
+  content10.style.transitionDelay = '0s';
+  content11.style.transitionDelay = '0s';
   content12.style.transitionDelay = '0s';
   content13.style.transitionDelay = '0.3s';
+  content14.style.transitionDelay = '0s';
+}
+function openLaragon() {
+	content10.style.transform = 'translateX(100%)';
+  content11.style.transform = 'translateX(100%)';
+  content12.style.transform = 'translateX(100%)';
+  content13.style.transform = 'translateX(100%)';
+  content14.style.transform = 'translateX(0)';
+  btn10.style.color = '#111';
+  btn11.style.color = '#111';
+  btn12.style.color = '#111';
+  btn13.style.color = '#111';
+  btn14.style.color = '#800000';
+  content10.style.transitionDelay = '0s';
+  content11.style.transitionDelay = '0s';
+  content12.style.transitionDelay = '0s';
+  content13.style.transitionDelay = '0s';
+  content14.style.transitionDelay = '0.3s';
 }
