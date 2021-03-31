@@ -1,0 +1,251 @@
+/*
+	Global CSS - 03/2021
+	CSS Sistem Reset oleh BangNomad.
+
+	Copyright 2021. All Right Reserved.
+*/
+
+/* ! CSS Reset */
+/* * Color Reset */
+:root {
+	--color1: #2196f3;
+	--color2: #d44;
+	--color3: #ffd700;
+	--color4: #080;
+	--color5: #f1f2f6;
+	--color6: #fff;
+	--color7: #ccc;
+	--color8: #111;
+	--color9: #1b1c1d;
+	--color10: #333;
+	--bgColor: rgba(255,255,255,.2);
+}
+/* * Margin Reset */
+:root {
+	--margin1: 3.5rem auto 0;
+	--margin2: 1rem;
+	--margin3: 2rem;
+	--margin4: 1rem 2rem;
+	--margin5: 2rem 1rem;
+}
+/* * Padding Reset */
+:root {
+	--padding1: 2.5rem;
+	--padding2: 1rem;
+	--padding3: 2rem;
+	--padding4: 1rem 2rem;
+	--padding5: 2rem 1rem;
+}
+/* * Border Reset */
+:root {
+	--borderRadius1: 50%;
+	--borderRadius2: 1rem;
+	--border1: .1rem solid #a7a6a6;
+	--border2: .5rem solid #333;
+}
+/* * Shadow Reset */
+:root {
+	--shadow1: 0 1rem 2rem rgba(0,0,0,.3);
+	--shadow2: 0 .2rem .2rem rgba(0,0,0,.3);
+	--shadow3: 0 .5rem 1rem #111;
+}
+/* * Font Size */
+:root {
+	--fontSize1: 1.3rem;
+	--fontSize2: 1.7rem;
+	--fontSize3: 2rem;
+	--fontSize4: 2.5rem;
+	--fontSize5: 3rem;
+}
+/* * Other Reset */
+:root {
+	--widthSize: 100%;
+	--heightSize: 100vh;
+	--htmlSize: 62.5%;
+	--fontWeight: lighter;
+	--justify: justify;
+	--fixed: fixed;
+	--cover: cover;
+	--none: none;
+}
+
+/* ! All */
+* {
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	font-family: verdana, geneva, tahoma, arial, sans-serif;
+	outline: var(--none); resize: var(--none);
+	list-style: var(--none); text-decoration: var(--none);
+}
+html {
+	font-size: var(--htmlSize);
+	scroll-behavior: smooth;
+}
+body {
+	background: var(--color5);
+}
+/* * Other */
+iframe {
+	width: var(--widthSize);
+	height: 28.7rem;
+}
+span { color: var(--color2); }
+.span { color: var(--color4); }
+dd {
+	padding-left: var(--padding3);
+	margin-bottom: var(--margin2);
+}
+fieldset {
+	margin: 3rem 0;
+	padding: var(--padding3);
+	text-align: var(--justify);
+}
+legend {
+	font-size: var(--fontSize3);
+}
+/* * Button Home */
+.btn-home {
+	position: var(--fixed);
+	bottom: 5rem; right: 7rem;
+	z-index: 10;
+}
+.btn-home .home {
+	position: relative;
+	background: var(--color10);
+	border-radius: var(--borderRadius1);
+}
+.btn-home .home a {
+	display: block;
+	background: rgba(44,62,80,1);
+	padding: var(--padding2);
+	color: var(--color6);
+	font-size: var(--fontSize5);
+	border-radius: var(--borderRadius1);
+	cursor: pointer;
+}
+.btn-home .home a:hover {
+	background: transparent;
+}
+/* * Disabled */
+.disabled {
+	pointer-events: var(--none);
+	cursor: default;
+}
+/* * Pre Code */
+.data-code {
+	position: relative;
+	/*max-width: 60rem;*/
+	/*margin: var(--margin1);*/
+	font-size: var(--fontSize2);
+	font-family: monospace, sans-serif;
+	overflow-y: auto;
+	/*white-space: pre-line;*/
+}
+
+/* ! Navbar */
+.navbar {
+	position: fixed;
+	top: 0; left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: var(--widthSize);
+	background: var(--color5);
+	padding: 2rem 5rem;
+	box-shadow: var(--shadow2);
+	z-index: 1;
+}
+.navbar .brand {
+	color: var(--color10);
+	font-size: var(--fontSize4);
+	font-weight: var(--fontWeight);
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+.navbar .brand span {
+	color: var(--color1);
+}
+.navbar .back:last-child {
+	display: none;
+}
+.navbar .back {
+	display: block;
+	background: var(--color8);
+	color: var(--color6);
+	padding: var(--padding4);
+	font-size: var(--fontSize1);
+	font-weight: var(--fontWeight);
+	border-radius: var(--borderRadius2);
+}
+.navbar .back:hover {
+	background: rgba(17,17,17,.9);
+}
+
+/* ! Container */
+.container {
+	position: relative;
+	width: var(--widthSize);
+	min-height: var(--heightSize);
+}
+/* * Started */
+.started {
+	width: var(--widthSize);
+	border-bottom: var(--border1);
+}
+.started .starBx {
+	max-width: 85rem;
+	margin: 10rem auto 3.5rem;
+	padding: var(--padding1);
+	font-size: var(--fontSize2);
+	text-align: var(--justify);
+}
+.title {
+	margin-bottom: var(--margin3);
+	font-size: var(--fontSize5);
+	font-weight: var(--fontWeight);
+}
+.basic {
+	width: var(--widthSize);
+	min-height: var(--heightSize);
+	background: url(../img/memphis.png);
+	background-attachment: fixed;
+}
+.basic .basicBx {
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 0 1rem 2rem;
+	background: var(--color6);
+	font-size: var(--fontSize2);
+	text-align: var(--justify);
+}
+
+@media screen and (max-width: 991px) {
+	/* * Button Home */
+	.btn-home {
+		bottom: 3rem; right: 3rem;
+	}
+	/* ! Navbar */
+	.navbar {
+		padding: 2rem 10rem;
+	}
+}
+@media screen and (max-width: 600px) {
+	/* ! Navbar */
+	.navbar {
+		background: var(--color8);
+		padding: var(--padding3);
+	}
+	.navbar .brand {
+		color: var(--color6);
+	}
+	.navbar .back:nth-child(2) {
+		display: none;
+	}
+	.navbar .back:last-child {
+		display: inline-block;
+	}
+	.navbar .back {
+		background: var(--color5);
+		color: var(--color8);
+	}
+}
