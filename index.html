@@ -8,6 +8,9 @@
 	<!-- ! Box Icons -->
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
+	<!--  ! Library JS -> Intro JS -->
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+
 	<!-- ! Custom CSS -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -38,7 +41,7 @@
 	<!-- ! Header Finish -->
 
 	<!-- ! Container Start -->
-	<main class="container">
+	<main id="container">
 		<!-- * Section Opening Start -->
 		<section class="opening">
 			<div class="titleBx">
@@ -52,7 +55,7 @@
 					Bagi pemula yang mengunjungi website kami ini sangat cocok sekali, karena di website kami ini berbahasa indonesia. Kalian bisa belajar mengenai bahasa pemograman dari yang belom tau sampai tau seputar pemograman. Website kami menyediakan beberapa bahasa pemograman yang bisa kalian pelajarin dan juga button <mark>intro</mark>, <mark>game</mark>, serta <mark>text editor</mark> untuk membantu kalian.
 				</p>
 				<div class="button">
-					<a href="#" class="btn-btn">Intro</a>
+					<a href="#" id="intro-btn" class="btn-btn">Intro</a>
 					<a href="#" class="btn-btn disabled">Game</a>
 					<a href="#" class="btn-btn disabled">Text Editor</a>
 				</div>
@@ -118,7 +121,7 @@
 								<th></th>
 								<th>Java</th>
 								<th>Laragon</th>
-								<th></th>
+								<th>OBS</th>
 								<th></th>
 							</tr>
 						</tbody>
@@ -201,7 +204,7 @@
 				<div class="box-left">
 					<h1 class="title">Belajar CSS</h1>
 					<p>
-						CSS ( Cascading Style Sheet) adalah mekanisme sederhana yang mengatur gaya atau style pada sebuah halaman web, dan salah satu tugas dari CSS ialah membantu HTML menjadi lebih baik. CSS terbagi menjadi tiga urutan, yaitu <mark>selector</mark>, <mark>property</mark> dan <mark>value</mark>. Nantinya akan banyak membahas tentang property pada CSS dibanding selector maupun valuenya dan CSS saat ini udah CSS 3 loh. <br><br> Syntax CSS seperti ini: <span style="color: #d44;">selector</span> { <span style="color: #2196f3;">property</span>: <span style="color: #ffd700">value</span>; } <br> 
+						CSS (Cascading Style Sheet) adalah mekanisme sederhana yang mengatur gaya atau style pada sebuah halaman web, dan salah satu tugas dari CSS ialah membantu HTML menjadi lebih baik. CSS terbagi menjadi tiga urutan, yaitu <mark>selector</mark>, <mark>property</mark> dan <mark>value</mark>. Nantinya akan banyak membahas tentang property pada CSS dibanding selector maupun valuenya dan CSS saat ini udah CSS 3 loh. <br><br> Syntax CSS seperti ini: <span style="color: #d44;">selector</span> { <span style="color: #2196f3;">property</span>: <span style="color: #ffd700">value</span>; } <br> 
 						Contoh penulisannya seperti ini: <span style="color: #d44;">body</span> { <span style="color: #2196f3;">font-family</span>: <span style="color: #ffd700;">arial</span>; }
 					</p>
 					<div class="btn-group">
@@ -232,7 +235,7 @@
 			<article id="content4" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar React.js</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -263,7 +266,7 @@
 			<article id="content5" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar C++</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -277,7 +280,7 @@
 			<article id="content6" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar PHP</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -291,7 +294,7 @@
 			<article id="content7" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar Python</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -305,7 +308,7 @@
 			<article id="content8" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar Node.js</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -319,7 +322,7 @@
 			<article id="content9" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar Java</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -333,6 +336,7 @@
 		</section>
 		<!-- * Section Back-End Finish -->
 
+		<!-- * Section Database Start -->
 		<section id="db" class="db content">
 			<div class="heading">
 				<h1 class="head">Database</h1>
@@ -342,14 +346,14 @@
 				<button id="btn10" onclick="openMysql()"><i class='bx bxl-imdb'></i>MySQL</button>
 				<button id="btn11" onclick="openNosql()"><i class='bx bxs-data'></i>NoSQL</button>
 				<button id="btn12" onclick="openApi()"><i class='bx bxs-chip'></i>API's</button>
-				<button id="btn13" onclick="openMongo()"><i class='bx bxs-chip'></i>MongoDB</button>
-				<button id="btn14" onclick="openLaragon()"><i class='bx bxs-chip'></i>Laragon</button>
+				<button id="btn13" onclick="openMongo()"><i class='bx bx-library'></i>MongoDB</button>
+				<button id="btn14" onclick="openLaragon()"><i class='bx bxs-cube'></i>Laragon</button>
 			</div>
 
 			<article id="content10" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar MySQL</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -363,7 +367,7 @@
 			<article id="content11" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar NoSQL</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -377,7 +381,7 @@
 			<article id="content12" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar API's</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -391,7 +395,7 @@
 			<article id="content13" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar MongoDB</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -405,7 +409,7 @@
 			<article id="content14" class="box">
 				<div class="box-left">
 					<h1 class="title">Belajar Laragon</h1>
-					<p>
+					<p style="color: #f1f2f6;">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
 					</p>
 					<div class="btn-group">
@@ -417,6 +421,151 @@
 				</div>
 			</article>
 		</section>
+		<!-- * Section Database Finish -->
+
+		<!-- * Section Multimedia Start -->
+		<section id="mm" class="mm content">
+			<div class="heading">
+				<h1 class="head">Multimedia</h1>
+			</div>
+
+			<div class="btn-box">
+				<button id="btn15" onclick="openAndro()"><i class='bx bx-mobile'></i>Android Studio</button>
+				<button id="btn16" onclick="openWord()"><i class='bx bxl-wordpress'></i>Wordpress</button>
+				<button id="btn17" onclick="openXd()"><i class='bx bxl-adobe'></i>Adobe XD</button>
+				<button id="btn18" onclick="openPoto()"><i class='bx bxl-adobe'></i>Adobe Photosop</button>
+				<button id="btn19" onclick="openObs()"><i class='bx bxs-video-plus'></i>OBS</button>
+			</div>
+
+			<article id="content15" class="box">
+				<div class="box-left">
+					<h1 class="title">Belajar Android Studio</h1>
+					<p style="color: #f1f2f6;">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
+					</p>
+					<div class="btn-group">
+						<a href="#" class="btn disabled">Disabled</a>
+					</div>
+				</div>
+				<div class="box-right box15">
+					<h2 class="logo">Android Studio</h2>
+				</div>
+			</article>
+			<article id="content16" class="box">
+				<div class="box-left">
+					<h1 class="title">Belajar Wordpress</h1>
+					<p style="color: #f1f2f6;">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
+					</p>
+					<div class="btn-group">
+						<a href="#" class="btn disabled">Disabled</a>
+					</div>
+				</div>
+				<div class="box-right box16">
+					<h2 class="logo">Wordpress</h2>
+				</div>
+			</article>
+			<article id="content17" class="box">
+				<div class="box-left">
+					<h1 class="title">Belajar Adobe XD</h1>
+					<p style="color: #f1f2f6;">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
+					</p>
+					<div class="btn-group">
+						<a href="#" class="btn disabled">Disabled</a>
+					</div>
+				</div>
+				<div class="box-right box17">
+					<h2 class="logo">Adobe XD</h2>
+				</div>
+			</article>
+			<article id="content18" class="box">
+				<div class="box-left">
+					<h1 class="title">Belajar Adobe Photoshop</h1>
+					<p style="color: #f1f2f6;">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
+					</p>
+					<div class="btn-group">
+						<a href="#" class="btn disabled">Disabled</a>
+					</div>
+				</div>
+				<div class="box-right box18">
+					<h2 class="logo">Adobe Photoshop</h2>
+				</div>
+			</article>
+			<article id="content19" class="box">
+				<div class="box-left">
+					<h1 class="title">Belajar OBS</h1>
+					<p style="color: #f1f2f6;">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
+					</p>
+					<div class="btn-group">
+						<a href="#" class="btn disabled">Disabled</a>
+					</div>
+				</div>
+				<div class="box-right box19">
+					<h2 class="logo">OBS</h2>
+				</div>
+			</article>
+		</section>
+		<!-- * Section Multimedia Finish -->
+
+		<!-- * Section More Start -->
+		<section id="more" class="more content">
+			<div class="heading">
+				<h1 class="head">Lainnya</h1>
+			</div>
+
+			<div class="btn-box">
+				<button id="btn20" onclick="openGithub()"><i class='bx bxl-github'></i>Github</button>
+				<button id="btn21" onclick="openGit()"><i class='bx bxl-git'></i>Git</button>
+				<button id="btn22" onclick="openLaravel()"><i class='bx bxs-book'></i>Laravel</button>
+			</div>
+
+			<article id="content20" class="box">
+				<div class="box-left">
+					<h1 class="title">Belajar Github</h1>
+					<p style="color: #f1f2f6;">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
+					</p>
+					<div class="btn-group">
+						<a href="#" class="btn disabled">Disabled</a>
+					</div>
+				</div>
+				<div class="box-right box20">
+					<h2 class="logo">Github</h2>
+				</div>
+			</article>
+			<article id="content21" class="box">
+				<div class="box-left">
+					<h1 class="title">Belajar Git</h1>
+					<p style="color: #f1f2f6;">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
+					</p>
+					<div class="btn-group">
+						<a href="#" class="btn disabled">Disabled</a>
+					</div>
+				</div>
+				<div class="box-right box21">
+					<h2 class="logo">Git</h2>
+				</div>
+			</article>
+			<article id="content22" class="box">
+				<div class="box-left">
+					<h1 class="title">Belajar Laravel</h1>
+					<p style="color: #f1f2f6;">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dolor. Aut, ipsa aperiam enim earum architecto ab explicabo eligendi beatae eius saepe accusantium deserunt optio fuga mollitia at placeat quis delectus! Vel esse nihil saepe voluptas necessitatibus neque autem, possimus perferendis provident consequuntur sint ab, architecto, iste alias officia id voluptate! In minus quibusdam porro voluptatibus laboriosam rerum molestias, velit fugiat, ab aspernatur dolores provident minima pariatur. Aperiam inventore delectus eveniet explicabo accusantium ex a nostrum pariatur error adipisci laborum voluptatum.
+					</p>
+					<div class="btn-group">
+						<a href="#" class="btn disabled">Disabled</a>
+					</div>
+				</div>
+				<div class="box-right box22">
+					<h2 class="logo">Laravel</h2>
+				</div>
+			</article>
+		</section>
+		<!-- * Section More Finish -->
 
 		<!-- * Footer Start -->
 		<footer>
@@ -441,6 +590,9 @@
 
 	<!-- ! JQuery -->
 	<script src="js/jquery-3.5.1.min.js"></script>
+
+	<!-- ! Library JS -> Intro JS -->
+	<script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
 
 	<!-- ! Custom Javascript -->
 	<script src="js/script.js"></script>

@@ -1,4 +1,4 @@
-// ! ===== Area Front End =====
+// ! ===== Front-End =====
 const content1 = document.getElementById('content1');
 const content2 = document.getElementById('content2');
 const content3 = document.getElementById('content3');
@@ -65,7 +65,7 @@ function openReact() {
 	content4.style.transitionDelay = '0.3s';
 }
 
-// ! ===== Area Back End =====
+// ! ===== Back-End =====
 const content5 = document.getElementById('content5');
 const content6 = document.getElementById('content6');
 const content7 = document.getElementById('content7');
@@ -163,7 +163,7 @@ function openJava() {
 	content9.style.transitionDelay = '0.3s';
 }
 
-// ! ===== Area Database =====
+// ! ===== Database =====
 const content10 = document.getElementById('content10');
 const content11 = document.getElementById('content11');
 const content12 = document.getElementById('content12');
@@ -199,7 +199,7 @@ function openNosql() {
   content13.style.transform = 'translateX(100%)';
   content14.style.transform = 'translateX(100%)';
   btn10.style.color = '#111';
-  btn11.style.color = '#00f';
+  btn11.style.color = '#48dbfb';
   btn12.style.color = '#111';
   btn13.style.color = '#111';
   btn14.style.color = '#111';
@@ -235,7 +235,7 @@ function openMongo() {
   btn10.style.color = '#111';
   btn11.style.color = '#111';
   btn12.style.color = '#111';
-  btn13.style.color = '#080';
+  btn13.style.color = '#4cd137';
   btn14.style.color = '#111';
   content10.style.transitionDelay = '0s';
   content11.style.transitionDelay = '0s';
@@ -253,10 +253,150 @@ function openLaragon() {
   btn11.style.color = '#111';
   btn12.style.color = '#111';
   btn13.style.color = '#111';
-  btn14.style.color = '#800000';
+  btn14.style.color = '#00a8ff';
   content10.style.transitionDelay = '0s';
   content11.style.transitionDelay = '0s';
   content12.style.transitionDelay = '0s';
   content13.style.transitionDelay = '0s';
   content14.style.transitionDelay = '0.3s';
+}
+
+// ! ===== Multimedia =====
+const content15 = document.getElementById('content15');
+const content16 = document.getElementById('content16');
+const content17 = document.getElementById('content17');
+const content18 = document.getElementById('content18');
+const content19 = document.getElementById('content19');
+const btn15 = document.getElementById('btn15');
+const btn16 = document.getElementById('btn16');
+const btn17 = document.getElementById('btn17');
+const btn18 = document.getElementById('btn18');
+const btn19 = document.getElementById('btn19');
+
+function openAndro() {
+	content15.style.transform = 'translateX(0)';
+  content16.style.transform = 'translateX(100%)';
+  content17.style.transform = 'translateX(100%)';
+  content18.style.transform = 'translateX(100%)';
+  content19.style.transform = 'translateX(100%)';
+  btn15.style.color = '#55efc4';
+  btn16.style.color = '#111';
+  btn17.style.color = '#111';
+  btn18.style.color = '#111';
+  btn19.style.color = '#111';
+  content15.style.transitionDelay = '0.3s';
+  content16.style.transitionDelay = '0s';
+  content17.style.transitionDelay = '0s';
+  content18.style.transitionDelay = '0s';
+  content19.style.transitionDelay = '0s';
+}
+function openWord() {
+  content15.style.transform = 'translateX(100%)';
+	content16.style.transform = 'translateX(0)';
+  content17.style.transform = 'translateX(100%)';
+  content18.style.transform = 'translateX(100%)';
+  content19.style.transform = 'translateX(100%)';
+  btn15.style.color = '#111';
+  btn16.style.color = '#0984e3';
+  btn17.style.color = '#111';
+  btn18.style.color = '#111';
+  btn19.style.color = '#111';
+  content15.style.transitionDelay = '0s';
+  content16.style.transitionDelay = '0.3s';
+  content17.style.transitionDelay = '0s';
+  content18.style.transitionDelay = '0s';
+  content19.style.transitionDelay = '0s';
+}
+function openXd() {
+  content15.style.transform = 'translateX(100%)';
+  content16.style.transform = 'translateX(100%)';
+	content17.style.transform = 'translateX(0)';
+  content18.style.transform = 'translateX(100%)';
+  content19.style.transform = 'translateX(100%)';
+  btn15.style.color = '#111';
+  btn16.style.color = '#111';
+  btn17.style.color = '#fc427b';
+  btn18.style.color = '#111';
+  btn19.style.color = '#111';
+  content15.style.transitionDelay = '0s';
+  content16.style.transitionDelay = '0s';
+  content17.style.transitionDelay = '0.3s';
+  content18.style.transitionDelay = '0s';
+  content19.style.transitionDelay = '0s';
+}
+function openPoto() {
+  content15.style.transform = 'translateX(100%)';
+  content16.style.transform = 'translateX(100%)';
+  content17.style.transform = 'translateX(100%)';
+	content18.style.transform = 'translateX(0)';
+  content19.style.transform = 'translateX(100%)';
+  btn15.style.color = '#111';
+  btn16.style.color = '#111';
+  btn17.style.color = '#111';
+  btn18.style.color = '#192a56';
+  btn19.style.color = '#111';
+  content15.style.transitionDelay = '0s';
+  content16.style.transitionDelay = '0s';
+  content17.style.transitionDelay = '0s';
+  content18.style.transitionDelay = '0.3s';
+  content19.style.transitionDelay = '0s';
+}
+function openObs() {
+  content15.style.transform = 'translateX(100%)';
+  content16.style.transform = 'translateX(100%)';
+  content17.style.transform = 'translateX(100%)';
+  content18.style.transform = 'translateX(100%)';
+	content19.style.transform = 'translateX(0)';
+  btn15.style.color = '#111';
+  btn16.style.color = '#111';
+  btn17.style.color = '#111';
+  btn18.style.color = '#111';
+  btn19.style.color = '#353b48';
+  content15.style.transitionDelay = '0s';
+  content16.style.transitionDelay = '0s';
+  content17.style.transitionDelay = '0s';
+  content18.style.transitionDelay = '0s';
+  content19.style.transitionDelay = '0.3s';
+}
+
+// ! ===== More =====
+const content20 = document.getElementById('content20');
+const content21 = document.getElementById('content21');
+const content22 = document.getElementById('content22');
+const btn20 = document.getElementById('btn20');
+const btn21 = document.getElementById('btn21');
+const btn22 = document.getElementById('btn22');
+
+function openGithub() {
+	content20.style.transform = 'translateX(0)';
+  content21.style.transform = 'translateX(100%)';
+  content22.style.transform = 'translateX(100%)';
+  btn20.style.color = '#1b1c1d';
+  btn21.style.color = '#111';
+  btn22.style.color = '#111';
+  content20.style.transitionDelay = '0.3s';
+  content21.style.transitionDelay = '0s';
+  content22.style.transitionDelay = '0s';
+}
+function openGit() {
+  content20.style.transform = 'translateX(100%)';
+	content21.style.transform = 'translateX(0)';
+  content22.style.transform = 'translateX(100%)';
+  btn20.style.color = '#111';
+  btn21.style.color = '#f00';
+  btn22.style.color = '#111';
+  content20.style.transitionDelay = '0s';
+  content21.style.transitionDelay = '0.3s';
+  content22.style.transitionDelay = '0s';
+}
+function openLaravel() {
+  content20.style.transform = 'translateX(100%)';
+  content21.style.transform = 'translateX(100%)';
+	content22.style.transform = 'translateX(0)';
+  btn20.style.color = '#111';
+  btn21.style.color = '#111';
+  btn22.style.color = '#e74c3c';
+  content20.style.transitionDelay = '0s';
+  content21.style.transitionDelay = '0s';
+  content22.style.transitionDelay = '0.3s';
 }
