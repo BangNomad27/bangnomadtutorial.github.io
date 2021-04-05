@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tutorial HTML | BangNomad</title>
+
+	<!-- ! Box Icons -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ! Highlight JS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/monokai.min.css">
+
+	<!-- ! Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="../../../css/global.css">
+	<link rel="stylesheet" href="../../../css/edit.css">
+</head>
+<body>
+	<!-- ! Button Home Start -->
+  <div class="btn-home">
+    <div class="home">
+      <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </div>
+  <!-- ! Button Home Finish -->
+
+	<!-- ! Navbar Start -->
+	<nav class="navbar nav-static">
+		<a href="materi2.html" class="brand">Bang<span>Nomad</span></a>
+		<a href="../../../index.html#fe" class="back">Back to Menu</a>
+		<a href="../../../index.html#fe" class="back">Back</a>
+	</nav>
+	<!-- ! Navbar Finish -->
+
+	<!-- ! Container Start -->
+	<main class="container">
+		<!-- ! Get Start -->
+		<div class="started">
+			<div class="starBx top">
+				<h2 class="title">Mulai</h2>
+				<p>
+					<i>Apa itu Tag?</i> Tag adalah sebuah penanda atau kode yang dibuat dengan kurung patah ( &lt;...&gt; ), dan didalamnya terdapat namaTag-nya dan terdapat juga atributnya (pake jika dibutuhkan). Nah, Tag itu sendiri ada Tag pembuka dan Tag penutup (&lt;...&gt;namaTag&lt;/...&gt;).
+				</p>
+			</div>
+		</div>
+		<!-- ! Get Finish -->
+
+		<section id="data-content" class="data-content">
+			<aside class="sidebar">
+				<div class="sidenav">
+					<h4 class="h4"><a href="#h2-1">Penggunaan NamaTag</a></h4>
+					<ul>
+						<li><a href="#paragraf">Paragraf</a></li>
+          	<li><a href="#heading">Heading</a></li>
+          	<li><a href="#list">List</a></li>
+          	<li><a href="#hyperlink">Hyperlink</a></li>
+          	<li><a href="#image">Image</a></li>
+          	<li><a href="#table">Table</a></li>
+          	<li><a href="#form">Form</a></li>
+					</ul>
+
+					<h4 class="h4"><a href="#h2-2">Tag Pendukung</a></h4>
+					<ul>
+						<li><a href="#biu">Bold, Italic, Underline</a></li>
+						<li><a href="#meter">Meter & Progress</a></li>
+						<li><a href="#brhr">Br & Hr</a></li>
+						<li><a href="#pre">Pre & Mark</a></li>
+						<li><a href="#supsub">Sup & Sub</a></li>
+						<li><a href="#dialog">Dialog</a></li>
+						<li><a href="#code">Code & XMP</a></li>
+					</ul>
+
+					<h4 class="h4"><a href="#h2-3">Tag di HTML 5</a></h4>
+					<ul>
+						<li><a href="#col">Colgroup & Col</a></li>
+						<li><a href="#detail">Details & Datalist</a></li>
+						<li><a href="#fig">Figure & Figcaption</a></li>
+						<li><a href="#field">Fildset & Legend</a></li>
+						<li><a href="#iframe">Iframe</a></li>
+						<li><a href="#audio">Audio & Source</a></li>
+						<li><a href="#video">Embed & Video</a></li>
+					</ul>
+				</div>
+			</aside>
+
+			<article>
+				<h2 id="h2-1" class="h2 space">Penggunaan NamaTag</h2>
+				<!-- * Paragraf -->
+				<div id="paragraf" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>p</span>&gt;</h3>
+          	<p>Digunakan untuk membuat sebuah isi / konten menjadi sebuah paragraf.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code"><code class="html">&lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, veritatis reiciendis excepturi dolore, deleniti doloribus consequatur temporibus molestiae asperiores soluta sed officia atque rem nihil est sit. Quas perferendis, doloremque.&lt;/p&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus est dolore neque, architecto, eveniet laboriosam, eligendi aliquam facilis atque maxime illo consectetur perferendis. Ut quisquam provident modi dignissimos, excepturi quasi!</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Heading -->
+				<div id="heading" class="content">
+					<div class="col">
+						<h3 class="h3">
+							Tag &lt;<span>h1</span>&gt; | &lt;<span>h2</span>&gt; | &lt;<span>h3</span>&gt; | &lt;<span>h4</span>&gt; | &lt;<span>h5</span>&gt; | &lt;<span>h6</span>&gt;
+						</h3>
+						<p>Digunakan untuk menentukan ukuran besar kecilnya sebuah teks. Semakin besar angka pada <mark>tag-nya</mark>, maka semakin kecil ukuran teksnya.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code"><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output heading zero">
+							<h1>Heading 1</h1>
+							<h2>Heading 2</h2>
+							<h3>Heading 3</h3>
+							<h4>Heading 4</h4>
+							<h5>Heading 5</h5>
+							<h6>Heading 6</h6>
+						</div>
+					</div>
+				</div>
+
+				<!-- * List -->
+				<div id="list" class="content">
+					<div class="col">
+						<h3 class="h3">
+							Tag &lt;<span>ol</span>&gt; | &lt;<span>ul</span>&gt; | &lt;<span>dl</span>&gt;
+						</h3>
+						<p>Ketiga tag ini digunakan untuk membuat sebuah list. Nah, untuk ketiga tag list tersebut, &lt;ol&gt; dan &lt;ul&gt; mempunyai tag tambahan, yaitu tag &lt;<span>li</span>&gt;. Sedangkan, tag &lt;dl&gt; tambahan tag-nya yaitu &lt;<span>dt</span>&gt; dan &lt;<span>dd</span>&gt;.</p>
+					</div>
+					<!-- Order List -->
+					<div class="col">
+						<p>&lt;ol&gt; (order list) digunakan untuk membuat list secara <mark>terurut</mark>. Nilai pada atribut <span class="span">type</span> yaitu: 1, a, A, i dan I.</p>
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code"><code class="html">&lt;ol&gt;
+  &lt;li&gt;Senen&lt;/li&gt;
+  &lt;li&gt;Selasa&lt;/li&gt;
+  &lt;li&gt;Rabu&lt;/li&gt;
+&lt;/ol&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<ol>
+								<li>Senen</li>
+								<li>Selasa</li>
+								<li>Rabu</li>
+							</ol>
+						</div>
+					</div>
+					<!-- Un-Order List -->
+					<div class="col">
+						<p>&lt;ul&gt; (un-order list) digunakan untuk membuat list <mark>tak berurut</mark>. Nilai pada atribut <span class="span">type</span> yaitu: disc, square dan circle.</p>
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code"><code class="html">&lt;ul&gt;
+  &lt;li&gt;Ayam Goreng&lt;/li&gt;
+  &lt;li&gt;Nasi Goreng&lt;/li&gt;
+  &lt;li&gt;Mie Goreng&lt;/li&gt;
+&lt;/ul&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<ul>
+								<li>Ayam Goreng</li>
+								<li>Nasi Goreng</li>
+								<li>Mie Goreng</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Definision List -->
+					<div class="col">
+						<p>&lt;dl&gt; (definision list) digunakan untuk mendefinisikan sebuah pada suatu list.</p>
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code"><code class="html">&lt;dl&gt;
+  &lt;dt&gt;Deskripsi Judul&lt;/dt&gt;
+  &lt;dd&gt;Mendeskripsikan kontennya&lt;/dd&gt;
+&lt;/dl&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<dl>
+								<dt>Deskripsi Judul</dt>
+								<dd>Mendeskripsikan kontennya</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Hyperlink -->
+				<div id="hyperlink" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>a</span>&gt;</h3>
+						<p>Digunakan untuk merubah teks menjadi sebuah teks link. Tag &lt;a&gt; membutuhkan tambahan atribut, yaitu <span class="span">href</span> dan juga ada atribut satu lagi yang tidak kalah penting, yaitu <span class="span">target</span> yang fungsinya ketika <mark>di klik</mark> maka akan membuat tab baru pada browser.</p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<p>Atribut <span class="span">target</span> banyak sekali nilainya, seperti: <span class="span-yl">_blank</span> | <span class="span-yl">_self</span> | <span class="span-yl">_top</span> | <span class="span-yl">_parent</span></p>
+							<p>Ada juga atribut <span class="span">download</span>, digunakan sebagai link download.</p>
+						</details>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;a href="https://www.instagram.com" target="_blank"&gt;Klik disini&lt;/a&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<a href="https://www.instagram.com" target="_blank">Klik disini</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Images -->
+				<div id="image" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>img</span>&gt;</h3>
+						<p>Digunakan untuk menampilkan sebuah gambar atau logo. Tag &lt;img&gt; mempunyai atribut khusus, yaitu <span class="span">src</span> dengan nilai nama gambar tersebut atau URL eksternal. Atribut lainnya seperti: <span class="span">alt</span> | <span class="span">title</span> | <span class="span">width</span> | <span class="span">height</span> <br><br> Tag &lt;img&gt; mempunyai <mark>ekstension</mark> gambar, seperti: <b>png</b> | <b>jpg</b> | <b>jpeg</b> | <b>svg</b> | <b>gif</b></p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<p>Jika kalian memakai gambar atau logo yang ada di browser, besar kemungkinan akan terkena <strong>Copyright</strong>. Oleh karena itu, buat gambar atau logo sendiri dengan software atau cari di browser gambar yang bebas pakai atau kunjungi website yang menyediakan gambar atau logo yang bebas pakai.</p>
+						</details>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;img src="image.png" alt="Tester" title="Tester" width="250" height="200"&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<img src="../../..//img/tester.png" alt="Komputer" title="Komputer" width="250" height="200">
+						</div>
+					</div>
+				</div>
+
+				<!-- * Table -->
+				<div id="table" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>table</span>&gt;</h3>
+						<p>Digunakan untuk membuat sebuah tabel. Didalam tag &lt;table&gt; terdapat tag tambahan, yaitu: &lt;<span>thead</span>&gt; | &lt;<span>tbody</span>&gt; | &lt;<span>tr</span>&gt; | &lt;<span>th</span>&gt;. Tag &lt;table&gt; mempunyai atribut khusus juga, yaitu: <span class="span">border</span> | <span class="span">cellspacing</span> | <span class="span">cellpading</span> | <span class="span">colspan</span> | <span class="span">rowspan</span>. <br><br> Terminologi atau istilah pada tag &lt;table&gt;, yaitu: <mark>field</mark> (kolom) | <mark>record</mark> (baris)</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code"><code class="html">&lt;table border="1" cellspacing="0" cellpadding="5"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Kolom 1&lt;/th&gt;
+      &lt;th&gt;Kolom 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Baris 1&lt;/th&gt;
+      &lt;th&gt;baris 1, kolom 1&lt;/th&gt;
+      &lt;th&gt;baris 1, kolom 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Baris 2&lt;/th&gt;
+      &lt;th&gt;baris 2, kolom 1&lt;/th&gt;
+      &lt;th&gt;baris 2, kolom 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<table border="1" cellspacing="0" cellpadding="5">
+								<thead>
+									<tr>
+										<th></th>
+										<th>Kolom 1</th>
+										<th>Kolom 2</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Baris 1</th>
+										<th>baris 1, kolom 1</th>
+										<th>baris 1, kolom 2</th>
+									</tr>
+									<tr>
+										<th>Baris 2</th>
+										<th>baris 2, kolom 1</th>
+										<th>baris 2, kolom 2</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- Rows & Cols -->
+					<div class="col">
+						<p><mark>Rowspan</mark> digunakan untuk membuat field baru, sedangkan <mark>colspan</mark> digunakan untuk membuat record baru.</p>
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code"><code class="html">&lt;table border="1" cellspacing="0" cellpadding="5"&gt;
+  &lt;tr&gt;
+    &lt;th rowspan="3"&gt;Rowspan 3&lt;/th&gt;
+    &lt;th colspan="2"&gt;Cosplan 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;2,1&lt;/th&gt;
+    &lt;th&gt;2,2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;3,1&lt;/th&gt;
+    &lt;th&gt;3,2&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<table border="1" cellspacing="0" cellpadding="5">
+								<tr>
+									<th rowspan="3">Rowspan 3</th>
+									<th colspan="2">Cosplan 2</th>
+								</tr>
+								<tr>
+									<th>2,1</th>
+									<th>2,2</th>
+								</tr>
+								<tr>
+									<th>3,1</th>
+									<th>3,2</th>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Form -->
+				<div id="form" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>form</span>&gt;</h3>
+						<p>Digunakan untuk membuat sebuah form. Tag tambahannya seperti: &lt;<span>input</span>&gt; | &lt;<span>label</span>&gt; | &lt;<span>select</span>&gt; | &lt;<span>button</span>&gt; | &lt;<span>textarea</span>&gt; dan masih banyak lagi. Pada tag &lt;select&gt; terdapat tag tambahan lagi, yaitu: &lt;<span>option</span>&gt;. <br><br> Tag &lt;button&gt; mempunyai atribut <span class="span">type</span> yang nilainya: <span class="span-yl">submit</span> | <span class="span-yl">reset</span> | <span class="span-yl">button</span></p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<dl>
+								<dt>Tag &lt;input&gt; memiliki banyak sekali nilainya pada atribut <span class="span">type</span>, seperti:</dt>
+								<dd>
+									*- <span class="span-yl">text</span>, untuk menuliskan sebuah teks <br>
+									*- <span class="span-yl">email</span>, untuk menuliskan sebuah email <br>
+									*- <span class="span-yl">password</span>, untuk menuliskan sebuah password <br>
+									*- <span class="span-yl">radio</span>, hanya memilih satu dari beberapa pilihan <br>
+									*- <span class="span-yl">checkbox</span>, dapat memilih lebih dari satu pilihan <br>
+									*- <span class="span-yl">date</span>, dapat menentukan tanggal lahir <br>
+									*- <span class="span-yl">time</span>, dapat menentukan waktu <br>
+									*- <span class="span-yl">datetime-local</span>, dapat menentukan tanggal lahir dan waktu <br>
+									*- <span class="span-yl">number</span>, dapat menentukan angka yang dipilih <br>
+									*- <span class="span-yl">month</span>, dapat menentukan tahun dan bulan <br>
+									*- <span class="span-yl">week</span>, dapat menentukan hari kosong atau jadwal kegiatan <br>
+									*- <span class="span-yl">color</span>, dapat memilih berbagai warna secara acak<br>
+									*- <span class="span-yl">file</span>, dapat menaruh sebuah file <br>
+									*- <span class="span-yl">range</span>, membuat bar persentase <br>
+									*- <span class="span-yl">search</span>, dapat menuliskan sesuatu yang ingin dicari
+								</dd>
+							</dl>
+							<p>Atribut <span class="span">action</span> untuk memberikan tujuan akhir dari tag &lt;form&gt; dari sebuah nilai yang dituju, seperti URL atau lainnya. <br><br> Atribut <span class="span">method</span> nilainya: <span class="span-yl">post</span> | <span class="span-yl">get</span> <br><br> Atribut <span class="span">accept</span> untuk menentukan file apa yang dapat diterima, nilainya: <span class="span-yl">image/*</span> | <span class="span-yl">audio/*</span> | <span class="span-yl">video/*</span> <br><br> Atribut <span class="span">autocomplete</span> untuk memperlihatkan histori penulisan yang sebelumnya diketik user. Nilainya: <span class="span-yl">on</span> | <span class="span-yl">off</span> <br><br> Atribut <span class="span">autofocus</span> untuk memfokuskan titik kursor mousenya.</p>
+						</details>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya</h3>
+						<div class="highlight">
+							<pre class="data-code"><code class="html">&lt;form action="..."&gt;
+  &lt;table border="1" cellspacing="0" cellpadding="5"&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;label for="nama"&gt;Nama&lt;/label&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;input type="text" id="nama"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;label for="email"&gt;Email&lt;/label&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;input type="email" id="email"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;label for="pw"&gt;Password&lt;/label&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;input type="password" id="pw"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;label for="id"&gt;Nomor ID&lt;/label&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;input type="number" min="0" max="5" id="id"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th colspan="2"&gt;
+        &lt;label for="pria"&gt;Pria&lt;/label&gt;&lt;input type="radio" id="pria" name="jeniskelamin"&gt;
+        &lt;label for="wanita"&gt;Wanita&lt;/label&gt;&lt;input type="radio" id="wanita" name="jeniskelamin"&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th colspan="2"&gt;
+        &lt;label for="fe"&gt;FrontEnd&lt;/label&gt;&lt;input type="checkbox" id="fe"&gt;
+        &lt;label for="be"&gt;BackEnd&lt;/label&gt;&lt;input type="checkbox" id="be"&gt;
+        &lt;label for="fs"&gt;Full Stack&lt;/label&gt;&lt;input type="checkbox" id="fs"&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;input type="date"&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;input type="time"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tempat Lahir&lt;/th&gt;
+      &lt;th&gt;
+        &lt;select&gt;
+          &lt;option&gt;Jakarta&lt;/option&gt;
+          &lt;option&gt;Bandung&lt;/option&gt;
+          &lt;option&gt;Tangerang&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;label for="color"&gt;Warna Kesukaan&lt;/label&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;input type="color" id="color"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;label for="bi"&gt;Bahasa Inggris&lt;/label&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;input type="range" min="0" max="100" id="bi"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th colspan="2"&gt;&lt;input type="file" accept="image/*"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;label for="komen"&gt;Alasan&lt;/label&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;textarea id="komen"&gt;&lt;/textarea&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;button type="submit"&gt;Submit&lt;/button&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;button type="reset"&gt;Reset&lt;/button&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/form&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<p>Tag &lt;form&gt; dengan bantuan tag &lt;table&gt;, agar lebih rapih dan tertata</p>
+						<h3 class="h3">Outputnya:</h3>
+						<form action="" class="formBx">
+							<table cellspacing="0" cellpadding="0">
+								<tr>
+									<th><label for="nama">Nama</label></th>
+									<th><input type="text" id="nama"></th>
+								</tr>
+								<tr>
+									<th><label for="email">Email</label></th>
+									<th><input type="email" id="email"></th>
+								</tr>
+								<tr>
+									<th><label for="pw">Password</label></th>
+									<th><input type="password" id="pw"></th>
+								</tr>
+								<tr>
+									<th><label for="id">Nomor ID</label></th>
+									<th><input type="number" min="0" max="5" id="id"></th>
+								</tr>
+								<tr>
+									<th colspan="2">
+										<label for="pria">Pria</label><input type="radio" id="pria" name="jeniskelamin">
+										<label for="wanita">Wanita</label><input type="radio" id="wanita" name="jeniskelamin">
+									</th>
+								</tr>
+								<tr>
+									<th colspan="2">
+										<label for="fe">FrontEnd</label><input type="checkbox" id="fe">
+										<label for="be">BackEnd</label><input type="checkbox" id="be">
+										<label for="fs">Full Stack</label><input type="checkbox" id="fs">
+									</th>
+								</tr>
+								<tr>
+									<th><input type="date"></th>
+									<th><input type="time"></th>
+								</tr>
+								<tr>
+									<th>Tempat Lahir</th>
+									<th>
+										<select>
+											<option>Jakarta</option>
+											<option>Bandung</option>
+											<option>Tangerang</option>
+										</select>
+									</th>
+								</tr>
+								<tr>
+									<th><label for="color">Warna Kesukaan</label></th>
+									<th><input type="color" id="color"></th>
+								</tr>
+								<tr>
+									<th><label for="bi">Bahasa Inggris</label></th>
+									<th><input type="range" min="0" max="100" id="bi"></th>
+								</tr>
+								<tr>
+									<th colspan="2"><input type="file" accept="image/*"></th>
+								</tr>
+								<tr>
+									<th><label for="komen">Alasan</label></th>
+									<th><textarea id="komen"></textarea></th>
+								</tr>
+								<tr>
+									<th><button type="submit">Submit</button></th>
+									<th><button type="reset">Reset</button></th>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+
+				<h2 id="h2-2" class="h2 space mt">Tag Pendukung</h2>
+				<!-- * BIU -->
+				<div id="biu" class="content">
+					<div class="col">
+						<h3 class="h3">
+							Tag &lt;<span>b</span>&gt; | &lt;<span>i</span>&gt; | &lt;<span>u</span>&gt;
+						</h3>
+						<p>Tag &lt;b&gt; digunakan untuk menebalkan teks, tag &lt;i&gt; digunakan untuk memiringkan teks, dan tag &lt;u&gt; digunakan untuk memberi garis bawab pada teks.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;b&gt;Selamat datang&lt;/b&gt; &lt;i&gt;di website&lt;/i&gt; &lt;u&gt;BangNomad&lt;/u&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<b>Selamat datang</b> <i>di website</i> <u>BangNomad</u>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Meter & Progress -->
+				<div id="meter" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>meter</span>&gt; | &lt;<span>progress</span>&gt;</h3>
+						<p>Kedua tag tersebut sama sama digunakan untuk membuat sebuah bar persentasi. Tag ini juga mempunyai atribut khusus, yaitu: <span class="span">min</span> | <span class="span">max</span> | <span class="span">value</span></p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;p&gt;HTML : &lt;meter min="0" max="10" value="7"&gt;&lt;/meter&gt;&lt;/p&gt;
+&lt;p&gt;CSS : &lt;meter min="0" max="100" value="55"&gt;&lt;/meter&gt;&lt;/p&gt;
+&lt;p&gt;Downloading : &lt;progress min="0" max="10" value="9"&gt;&lt;/progress&gt;&lt;/p&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p>HTML : <meter min="0" max="10" value="7"></meter></p>
+							<p>CSS : <meter min="0" max="100" value="55"></meter></p>
+							<p>Downloading : <progress min="0" max="10" value="9"></progress></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- * BR & HR -->
+				<div id="brhr" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>br</span>&gt; | &lt;<span>hr</span>&gt;</h3>
+						<p>Digunakan sebagai tag pendukung di HTML. Tag &lt;br&gt; untuk membuat garis baru pada sebuah paragraf, sedangkan tag &lt;hr&gt; untuk membuat sebuah garis pembatas secara horizontal.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. &lt;br&gt;&lt;br&gt;Ratione perferendis impedit at modi dicta repellendus nulla cupiditate commodi debitis ducimus!&lt;hr&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illum reiciendis!&lt;/p&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>Ratione perferendis impedit at modi dicta repellendus nulla cupiditate commodi debitis ducimus!<hr> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illum reiciendis!</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Pre & Mark -->
+				<div id="pre" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>pre</span>&gt; | &lt;<span>mark</span>&gt;</h3>
+						<p>Tag &lt;pre&gt; digunakan untuk custom teks lebih bebas dibanding tag &lt;p&gt;, misal memberi spasi lebih panjang. Sedangkan, tag &lt;mark&gt; digunakan untuk membuat label bewarna kuning (defaultnya) pada sebuah teks.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;pre&gt;Selamat Datang      di Website     &lt;mark&gt;BangNomad&lt;/mark&gt;&lt;/pre&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<pre>Selamat Datang      di Website     <mark>BangNomad</mark></pre>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Sup & Sub -->
+				<div id="supsub" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>sup</span>&gt; | &lt;<span>sub</span>&gt;</h3>
+						<p>Digunakan untuk membuat teks menjadi berpangkat. Dan tag ini cocok untuk kalkulasi perhitungan. Tag &lt;sup&gt; untuk pangkat keatas, sedangkan tag &lt;sub&gt; untuk pangkat kebawah.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;p&gt;2&lt;sup&gt;2&lt;/sup&gt; + 2&lt;sup&gt;3&lt;/sup&gt; = 12 &lt;br&gt; H&lt;sub&gt;2&lt;/sub&gt;O adalah ...&lt;/p&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p>2<sup>2</sup> + 2<sup>3</sup> = 12 <br> H<sub>2</sub>O adalah ...</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Dialog -->
+				<div id="dialog" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>dialog</span>&gt;</h3>
+						<p>Digunakan untuk membuat sebuah kotak dialog antar user dengan program. Tag &lt;dialog&gt; memiliki atribut tambahan, yaitu: <span class="span">open</span></p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;dialog open&gt;Selamat Datang!&lt;/dialog&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output mid">
+							<dialog open>Selamat Datang!</dialog>
+						</div>
+					</div>
+				</div>
+
+				<!-- * Code & Xmp -->
+				<div id="code" class="content">
+					<div class="col">
+						<h3 class="h3">Tag &lt;<span>code</span>&gt; | &lt;<span>xmp</span>&gt;</h3>
+						<p>Digunakan untuk menampilkan sebuah source code yang kita koding ke dalam halaman website.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;code&gt;console.log('ok');&lt;/code&gt;
+&lt;xmp&gt;&lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, beatae.&lt;/p&gt;&lt;/xmp&gt;
+							</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Output Tag &lt;code&gt;:</h3>
+						<div class="output zero">
+							<code>console.log('ok!');</code>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Output tag &lt;xmp&gt;:</h3>
+						<div class="output zero">
+							<xmp><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, provident.</p></xmp>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<!-- ! Container Finish -->
+	
+  <!-- ! Highlight JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+
+  <!-- ! Custom Javascript -->
+  <script type="text/javascript">
+  	// Library JS
+  	hljs.highlightAll();
+
+  	// Copy Button
+    document.querySelectorAll('pre > code').forEach(function(codeBlock) {
+      var button = document.createElement('button');
+
+      button.style.display = 'none';
+
+      var pre = codeBlock.parentNode;
+      if(pre.parentNode.classList.contains('highlight')) {
+        var highlight = pre.parentNode;
+
+        highlight.parentNode.insertBefore(button, highlight);
+      }
+      else {
+        pre.parentNode.insertBefore(button, pre);
+      }
+    });
+
+    function addCopyButtons(clipboard) {
+      document.querySelectorAll('pre > code').forEach(function(codeBlock) {
+        var button = document.createElement('button');
+
+        button.className = 'copy-code-button';
+        button.type = 'button';
+        button.innerText = 'Copy';
+        
+        button.addEventListener('click', function() {
+          clipboard.writeText(codeBlock.innerText).then(function() {
+            button.blur();
+            button.innerText = 'Copied!';
+
+            setTimeout(function() {
+              button.innerText = 'Copy';
+            }, 2000);
+          }, function(error) {
+            button.innerText = 'Error';
+          });
+        });
+        var pre = codeBlock.parentNode;
+        if(pre.parentNode.classList.contains('highlight')) {
+          var highlight = pre.parentNode;
+
+          highlight.parentNode.insertBefore(button,highlight);
+        }
+        else {
+          pre.parentNode.insertBefore(button, pre);
+        }
+      });
+    }
+    if(navigator && navigator.clipboard) {
+      addCopyButtons(navigator.clipboard);
+    }
+    else {
+      var script = document.createElement('script');
+
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+      script.integrity =  'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+      script.crossOrigin = 'anonymous';
+      script.onload = function() {
+        addCopyButtons(clipboard);
+      };
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
