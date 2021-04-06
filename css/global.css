@@ -357,9 +357,11 @@ article .h2 {
 	height: 0%;
 }
 /* ! More Class */
+.content .col .h3.bigTxt { font-size: var(--fontSize3); }
 .output.mid { height: 9rem; }
 .space { letter-spacing: .1rem; }
 .mt{ margin-top: var(--margin2); }
+.blue-sea { color: var(--color1); }
 
 @media screen and (max-width: 991px) {
 	/* * Button Home */
@@ -393,12 +395,13 @@ article .h2 {
 		background: var(--color5);
 		color: var(--color8);
 	}
+	.navbar .back:hover { background: var(--color6); }
 	/* ! Container */
 	.container .data-content { padding: 2rem 0; }
 	/* ! Aside */
 	aside { display: none; }
 	/* ! Article */
-	.container .data-content article {
+	article {
 		width: 100%;
 		padding: 0 2rem;
 	}

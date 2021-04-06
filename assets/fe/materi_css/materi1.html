@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tutorial 1 CSS | BangNomad</title>
+
+	<!-- ! Box Icons -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ! Highlight JS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/monokai.min.css">
+
+	<!-- ! Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="../../../css/global.css">
+	<link rel="stylesheet" href="../../../css/edit.css">
+</head>
+<body>
+	<!-- ! Button Home Start -->
+	<div class="btn-home">
+		<div class="home">
+			<a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+	</div>
+	<!-- ! Button Home Finish -->
+
+	<!-- ! Navbar Start -->
+	<nav class="navbar nav-static">
+		<a href="materi1.html" class="brand">Bang<span>Nomad</span></a>
+		<a href="../../../index.html#fe" class="back">Back to Menu</a>
+		<a href="../../../index.html#fe" class="back">Back</a>
+	</nav>
+	<!-- ! Navbar Finish -->
+
+	<!-- ! Container Start -->
+	<main class="container">
+		<!-- ! Get Start -->
+		<div class="started">
+			<div class="starBx top">
+				<h2 class="title">Mulai</h2>
+				<p><i>Apa itu selector?</i> Selector adalah namaTag di HTML yang dipanggil namaTagnya dan disebut sebagai <mark>selector</mark>. Selector bisa juga memanggil nama atribut <span class="span">class</span> atau <span class="span">id</span> didalam namaTag tersebut dan memanggilnya menggunakan <mark>simbol selector</mark> atau disebut juga <b>pseudo-class</b>.</p>
+			</div>
+		</div>
+		<!-- ! Get Finish -->
+
+		<!-- ! Section Start -->
+		<section id="data-content" class="data-content">
+			<aside class="sidebar">
+				<div class="sidenav">
+					<h4 class="h4"><a href="#h2-1">Property CSS 1</a></h4>
+					<ul>
+						<li><a href="#font">Fonts</a></li>
+						<li><a href="#text">Texts</a></li>
+						<li><a href="#bg">Background & Color</a></li>
+						<li><a href="#pc">Pseudo-Class</a></li>
+					</ul>
+
+					<h4 class="h4"><a href="#h2-2">Property CSS 2</a></h4>
+					<ul>
+						<li><a href="#display">Display</a></li>
+						<li><a href="#flow">Overflow</a></li>
+						<li><a href="#float">Float & Clear</a></li>
+						<li><a href="#posisi">Position</a></li>
+						<li><a href="#zindex">Z-Index</a></li>
+					</ul>
+				</div>
+			</aside>
+
+			<article>
+				<h2 id="h2-1" class="h2 space">Property CSS 1</h2>
+				<!-- ! Fonts -->
+				<div id="font" class="content">
+				  <!-- * Font Size -->
+					<div class="col">
+						<h3 class="h3 blue-sea">Font Size</h3>
+						<p>Digunakan untuk menentukan ukuran huruf pada sebuah teks.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { font-size: 22px; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p style="font-size: 22px;">Lorem ipsum dolor sit amet consectetur adipisicing facilis!</p>
+						</div>
+					</div>
+					<!-- * Font Family -->
+					<div class="col">
+						<h3 class="h3 blue-sea bigTxt">Font Family</h3>
+						<p>Digunakan untuk menentukan jenis hurufnya yang ditentukan.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { font-family: georgia, sans-serif; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p style="font-family: georgia;">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nemo, veniam!</p>
+						</div>
+					</div>
+					<!-- * Font Weight -->
+					<div class="col">
+						<h3 class="h3 bigTxt blue-sea">Font Weight</h3>
+						<p>Digunakan untuk menentukan ketebalan hurufnya, bedanya dengan tag &lt;b&gt; ialah property ini bisa mengatur ketebalan hurufnya. Nilainya: <span class="span-yl">normal</span> | <span class="span-yl">bold</span> | <span class="span-yl">bolder</span> | <span class="span-yl">500-900</span> dan lain lain.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { font-weight: 900; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p style="font-weight: 900;">Lorem ipsum, dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+					<!-- * Font Style -->
+					<div class="col">
+						<h3 class="h3 bigTxt blue-sea">Font Style</h3>
+						<p>Digunakan untuk menentukan kemiringan pada huruf, dan property ini sama seperti tag &lt;i&gt; pada HTML. Nilainya: <span class="span-yl">normal</span> | <span class="span-yl">italic</span> | <span class="span-yl">oblique</span> dan lain lain.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { font-style: oblique; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p style="font-style: oblique;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, ipsum.</p>
+						</div>
+					</div>
+					<!-- * Font Variant -->
+					<div class="col">
+						<h3 class="h3 bigTxt blue-sea">Font Variant</h3>
+						<p>Digunakan untuk membuat huruf menjadi capital walaupun teks default ga capital. Nilainya: <span class="span-yl">normal</span> | <span class="span-yl">small-caps</span> | <span class="span-yl">inherit</span> | <span class="span-yl">unset</span> dan lain lain.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { font-variant: small-caps; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p style="font-variant: small-caps;">Lorem ipsum dolor sit amet consectetur, adipisicing elit voluptates!</p>
+						</div>
+						<p class="mt">Masih banyak lagi property font lainnya, seperti: <span class="blue-sea">font-kerning</span> | <span class="blue-sea">font-synthesis</span> | <span class="blue-sea">font-stretch</span> dan lain lain.</p>
+					</div>
+				</div>
+
+				<!-- ! Texts -->
+				<div id="text" class="content">
+					<!-- * Text Align -->
+					<div class="col">
+						<h3 class="h3 blue-sea">Text Align</h3>
+						<p>Digunakan untuk menentukan kerataan pada sebuah teks. Nilainya: <span class="span-yl">left</span> | <span class="span-yl">center</span> | <span class="span-yl">right</span> | <span class="span-yl">justify</span></p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { text-align: left; }
+selector { text-align: center; }
+selector { text-align: right; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p style="text-align: left;">Rata Kiri</p>
+							<p style="text-align: center;">Rata Tengah</p>
+							<p style="text-align: right;">Rata Kanan</p>
+						</div>
+					</div>
+					<!-- * Text Indent -->
+					<div class="col">
+						<h3 class="h3 bigTxt blue-sea">Text Indent</h3>
+						<p>Digunakan untuk memberi ruang kosong diawal paragraf seperti menggunakan HTML entitas yang ini <mark>&amp;nbsp;</mark></p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { text-indent: 20px; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p style="text-indent: 20px;">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus est impedit aliquam eos distinctio maiores quos unde officiis, corporis sit quod minus atque! Non tempora deleniti praesentium officiis perferendis?</p>
+						</div>
+					</div>
+					<!-- * Text Decoration -->
+					<div class="col">
+						<h3 class="h3 bigTxt blue-sea">Text Decoration</h3>
+						<p>Digunakan untuk mendekorasi sebuah teks dengan menambahkan sebuah garis pada teksnya. Nilainya: <span class="span-yl">none</span> | <span class="span-yl">underline</span> | <span class="span-yl">overline</span> | <span class="span-yl">line-through</span></p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { text-decoration: underline; }
+selector { text-decoration: overline; }
+selector { text-decoration: line-through; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p><span style="text-decoration: underline; color: #111;">Underline</span> | <span style="text-decoration: overline; color: #111;">Overline</span> | <span style="text-decoration: line-through; color: #111;">Line-Through</span></p>
+						</div>
+					</div>
+					<!-- * Text Transform -->
+					<div class="col">
+						<h3 class="h3 bigTxt blue-sea">Text Transform</h3>
+						<p>Digunakan untuk membuat style pada hurufnya. Nilainya: <span class="span-yl">none</span> | <span class="span-yl">lowercase</span> | <span class="span-yl">uppercase</span> | <span class="span-yl">capitalize</span></p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { text-transform: lowercase; }
+selector { text-transform: uppercase; }
+selector { text-transform: capitalize; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<p style="text-transform: lowercase;">LOWERCASE</p>
+							<p style="text-transform: uppercase;">uppercase</p>
+							<p style="text-transform: capitalize;">capitalize</p>
+						</div>
+						<p class="mt">Masih banyak lagi property text lainnya, seperti: <span class="blue-sea">text-anchor</span> | <span class="blue-sea">text-shadow</span> | <span class="blue-sea">text-orientation</span> | <span class="blue-sea">text-rendering</span> | <span class="blue-sea">text-overflow</span> dan lain lain.</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- ! Section Finish -->
+	</main>
+	<!-- ! Container Finish -->
+	
+	<!-- ! Highlight JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+
+	<!-- ! Custom Javascript -->
+	<script type="text/javascript">
+  	// Library JS
+  	hljs.highlightAll();
+
+  	// Copy Button
+  	document.querySelectorAll('pre > code').forEach(function(codeBlock) {
+  		var button = document.createElement('button');
+
+  		button.style.display = 'none';
+
+  		var pre = codeBlock.parentNode;
+  		if(pre.parentNode.classList.contains('highlight')) {
+  			var highlight = pre.parentNode;
+
+  			highlight.parentNode.insertBefore(button, highlight);
+  		}
+  		else {
+  			pre.parentNode.insertBefore(button, pre);
+  		}
+  	});
+
+  	function addCopyButtons(clipboard) {
+  		document.querySelectorAll('pre > code').forEach(function(codeBlock) {
+  			var button = document.createElement('button');
+
+  			button.className = 'copy-code-button';
+  			button.type = 'button';
+  			button.innerText = 'Copy';
+
+  			button.addEventListener('click', function() {
+  				clipboard.writeText(codeBlock.innerText).then(function() {
+  					button.blur();
+  					button.innerText = 'Copied!';
+
+  					setTimeout(function() {
+  						button.innerText = 'Copy';
+  					}, 2000);
+  				}, function(error) {
+  					button.innerText = 'Error';
+  				});
+  			});
+  			var pre = codeBlock.parentNode;
+  			if(pre.parentNode.classList.contains('highlight')) {
+  				var highlight = pre.parentNode;
+
+  				highlight.parentNode.insertBefore(button,highlight);
+  			}
+  			else {
+  				pre.parentNode.insertBefore(button, pre);
+  			}
+  		});
+  	}
+  	if(navigator && navigator.clipboard) {
+  		addCopyButtons(navigator.clipboard);
+  	}
+  	else {
+  		var script = document.createElement('script');
+
+  		script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+  		script.integrity =  'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+  		script.crossOrigin = 'anonymous';
+  		script.onload = function() {
+  			addCopyButtons(clipboard);
+  		};
+  		document.body.appendChild(script);
+  	}
+  </script>
+</body>
+</html>

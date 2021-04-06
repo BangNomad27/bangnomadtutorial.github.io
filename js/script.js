@@ -1,3 +1,8 @@
+// ! ===== Button Background Color =====
+const buttonBg = document.querySelector('.color .color-icon i');
+
+buttonBg.onclick = () => document.body.classList.toggle('colorBg');
+
 // ! ===== Header =====
 window.addEventListener('scroll', function() {
 	const header = document.querySelector('header');

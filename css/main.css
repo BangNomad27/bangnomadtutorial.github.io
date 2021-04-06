@@ -37,11 +37,34 @@ body {
 section {
 	position: relative;
 	width: 100%;
-	background: var(--bgColor);
+	/*background: var(--bgColor);*/
 	padding: 10rem;
 }
 
 /* ! All */
+/* * Button Background Color */
+.color {
+	position: fixed;
+	bottom: 12rem; right: 7rem;
+	z-index: 10;
+}
+.color .color-icon {
+	position: relative;
+	background: #333;
+	border-radius: var(--borderRadius);
+}
+.color .color-icon .bx {
+	background: rgba(44,62,80,1);
+	color: rgba(255,255,255,1);
+	font-size: 3rem;
+	padding: var(--padding1);
+	border-radius: var(--borderRadius);
+	cursor: pointer;
+}
+body.colorBg {
+	/*background: linear-gradient(lightgreen, #44bd32);*/
+	background: #fff;
+}
 /* * Button Home */
 .btn-home {
 	position: fixed;

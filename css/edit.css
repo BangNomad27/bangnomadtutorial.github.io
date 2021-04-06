@@ -1,13 +1,16 @@
-/* ! Span */
+/* ! Arean Tambahan */
+/* * Span */
 span { color: var(--color2); }
 .span { color: var(--color4); }
 .span-yl { color: var(--color3); }
 
-/* ! Basic */
+/* * Basic */
 .basic .basicBx .title {
 	padding-top: var(--padding2);
 }
-/* ! Heading */
+
+/* ! Area HTML */
+/* * Heading */
 .heading { text-align: center; }
 .heading h1 { font-size: 4rem; }
 .heading h2 { font-size: 3.5rem; }
@@ -15,11 +18,11 @@ span { color: var(--color2); }
 .heading h4 { font-size: 2.5rem; }
 .heading h5 { font-size: 2rem;  }
 .heading h6 { font-size: 1.5rem; }
-/* ! List */
+/* * List */
 .content .col :is(ol li, ul li) { margin-left: var(--margin3); }
 .content .col ol li { list-style: decimal; }
 .content .col ul li { list-style: square; }
-/* ! Form */
+/* * Form */
 .formBx table {
 	margin-top: 0.3rem;
 	font-size: var(--fontSize2);
@@ -31,3 +34,5 @@ span { color: var(--color2); }
 .formBx table label:is([for=pria], [for=wanita], [for=fe], [for=be], [for=fs]) {
 	padding-right: 0.5rem;
 }
+
+/* ! Area CSS 
