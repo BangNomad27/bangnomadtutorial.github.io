@@ -35,4 +35,93 @@ span { color: var(--color2); }
 	padding-right: 0.5rem;
 }
 
-/* ! Area CSS 
+/* ! Area CSS */
+/* * Pseudo-Class */
+p.hover, p.active {
+	display: inline;
+	cursor: pointer;
+}
+.hover:hover { color: coral; }
+.active:active { font-style: italic; }
+.ul1 + p, .ul2 li > ul li, .ul3 ~ p, span[id=spanID], .ul4 li:first-child, .ul5 li:last-child, .ul6 li:nth-child(2n), div[data-not] p:not(.content2) { color: blueviolet; }
+input[data-checkbox], label { cursor: pointer; outline: none; }
+input[data-checkbox]:checked + label { text-transform: uppercase; }
+input[data-focus] {
+	width: 20rem;
+	background: transparent;
+	padding: 1.1rem 0.5rem;
+	font-size: var(--fontSize2);
+	text-align: center;
+	border: .2rem solid var(--color1);
+	border-radius: 9rem;
+	outline: none;
+	-moz-outline: none;
+	cursor: pointer;
+	transition: .2s;
+}
+input[data-focus]:focus {
+	width: 28rem;
+	border-color: limegreen;
+}
+/* * Overflow */
+div[data-overflow] {
+	width: 20rem;
+	height: 15rem;
+	background: limegreen;
+}
+.auto { overflow: auto; }
+.hide { overflow: hidden; line-height: 2.3rem; }
+.scroll { overflow: scroll; }
+/* * Float */
+div[data-float] {
+	background: limegreen;
+	padding: var(--padding3);
+}
+div[data-float] .floatImg {
+	width: 20rem;
+	height: 20rem;
+	float: left;
+	margin-right: var(--margin2);
+}
+/* * Position */
+div[data-box] {
+	width: 15rem;
+	height: 10rem;
+	border: .1rem solid #333;
+}
+div[data-box].box1 { background-color: #ff0000; }
+div[data-box].box2 { background-color: #008000; }
+div[data-box].box3 { background-color: #0000ff; }
+div[data-relatif] {
+	position: relative;
+	top: 1rem; left: 1rem;
+}
+div[data-absolute] {
+	position: absolute;
+	top: 1rem; left: 1rem;
+}
+/* * Z-Index */
+div[data-zindex].box2 {
+	position: absolute;
+	top: 6rem; left: 10rem;
+	z-index: 2;
+}
+div[data-zindex].box3 {
+	position: absolute;
+	top: 10rem; left: 20rem;
+	z-index: 1;
+}
+
+
+/* Micro Clearfix */
+.cf:before,
+.cf:after {
+ content: " ";
+ display: table;
+}
+.cf:after {
+ clear: both;
+}
+.cf {
+ *zoom: 1;
+}

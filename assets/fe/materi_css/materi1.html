@@ -59,9 +59,27 @@
 					<ul>
 						<li><a href="#display">Display</a></li>
 						<li><a href="#flow">Overflow</a></li>
-						<li><a href="#float">Float & Clear</a></li>
+						<li><a href="#float">Float</a></li>
+						<li><a href="#clear">Clear</a></li>
 						<li><a href="#posisi">Position</a></li>
 						<li><a href="#zindex">Z-Index</a></li>
+					</ul>
+
+					<h4 class="h4" style="margin-left: 3.5rem;"><a href="#h2-3">Box Model</a></h4>
+					<ul>
+						<li><a href="#margin">Margin</a></li>
+						<li><a href="#pading">Padding</a></li>
+						<li><a href="#border">Border</a></li>
+						<li><a href="#konten">Content</a></li>
+					</ul>
+
+					<h4 class="h4" style="margin-left: 2rem;"><a href="#h2-4">Quick Tip</a></h4>
+					<ul>
+						<li><a href="#lineH">Line-Height</a></li>
+						<li><a href="#letter">Letter Spacing</a></li>
+						<li><a href="#word">Word Spacing</a></li>
+						<li><a href="#pe">Pseudo-Element</a></li>
+						<li><a href="#ico">Favicon</a></li>
 					</ul>
 				</div>
 			</aside>
@@ -240,6 +258,787 @@ selector { text-transform: capitalize; }</code></pre>
 						<p class="mt">Masih banyak lagi property text lainnya, seperti: <span class="blue-sea">text-anchor</span> | <span class="blue-sea">text-shadow</span> | <span class="blue-sea">text-orientation</span> | <span class="blue-sea">text-rendering</span> | <span class="blue-sea">text-overflow</span> dan lain lain.</p>
 					</div>
 				</div>
+
+				<!-- ! Background & Color -->
+				<div id="bg" class="content">
+					<!-- * Background -->
+					<div class="col">
+						<h3 class="h3 blue-sea">Background</h3>
+						<p>Kedua property ini digunakan untuk memberikan warna terhadap elemennya. <mark>Background</mark> digunakan untuk memberi warna terhadap latarnya.</p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<!-- * BG Color -->
+							<div class="col">
+								<h3 class="h3 blue-sea">background-color</h3>
+								<p>Untuk memberikan warna terhadap halaman website atau background websitenya. Nilainya: <span class="span-yl">nama_warna</span> | <span class="span-yl">hexa-desimal</span> | <span class="span-yl">rgb()</span> dan lain lain.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { background-color: grey; }</code></pre>
+								</div>
+							</div>
+							<!-- * BG Image -->
+							<div class="col">
+								<h3 class="h3 blue-sea">background-image</h3>
+								<p>Untuk memberikan sebuah gambar pada background. Nilainya: <span class="span-yl">url()</span> dan lain lain.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { background-image: url(../img/image.png); }</code></pre>
+								</div>
+							</div>
+							<!-- * BG Size -->
+							<div class="col">
+								<h3 class="h3 blue-sea">background-size</h3>
+								<p>Untuk menentukan ukuran sebuah gambarnya. Nilainya: <span class="span-yl">count manually</span> | <span class="span-yl">cover</span> dan lain lain.</p>
+								<details>
+									<summary>Selengkapnya</summary>
+									<p>Count Manually ialah sebuah nilai yang diatur manual oleh programmernya. Ini terdapat dua nilai, yaitu nilai pertama untuk menentukan nilainya secara <mark>horizontal</mark>, sedangkan nilai kedua untuk menentukan nilainya secara <mark>vertikal</mark>. Seperti contoh dibawah ini:</p>
+								</details>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { background-size: 200px 250px; }</code></pre>
+								</div>
+							</div>
+							<!-- * BG Repeat -->
+							<div class="col">
+								<h3 class="h3 blue-sea">background-repeat</h3>
+								<p>Untuk menentukan gambarnya berulang atau single image. Nilainya: <span class="span-yl">no-repeat</span></p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { background-repeat: no-repeat; }</code></pre>
+								</div>
+							</div>
+							<!-- * BG Position -->
+							<div class="col">
+								<h3 class="h3 blue-sea">background-position</h3>
+								<p>Untuk menentukan posisi backgroundnya. Nilainya: <span class="span-yl">count manually</span> | <span class="span-yl">left</span> | <span class="span-yl">right</span> | <span class="span-yl">center</span> dan lain lain.</p>
+								<details>
+									<summary>Selengkapnya</summary>
+									<p>Count Manually ialah sebuah nilai yang diatur manual oleh programmernya. Ini terdapat dua nilai, yaitu nilai pertama untuk menentukan nilainya secara <mark>horizontal</mark>, sedangkan nilai kedua untuk menentukan nilainya secara <mark>vertikal</mark>.</p>
+								</details>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { background-position: 0 -100px; }</code></pre>
+								</div>
+								<p class="mt">Dan masih banyak lagi property untuk background ini, seperti: <span class="blue-sea">background-clip</span> | <span class="blue-sea">background-attachment</span> | <span class="blue-sea">background-blend-mode</span> | <span class="blue-sea">background-origin</span> dan lain lain.</p>
+							</div>
+						</details>
+					</div>
+					<!-- * Color -->
+					<div class="col">
+						<h3 class="h3 bigTxt blue-sea">Color</h3>
+						<p><mark>Color</mark> digunakan untuk memberikan warna terhadap teksnya. Nilainya: <span class="span-yl">nama_warna</span> | <span class="span-yl">hexa-desimal</span> | <span class="span-yl">rgb()</span> dan lain lain.</p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<p>Cara pemanggilan nilainya bermacam macam, contohnya:</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Dengan nama_warna:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { color: orange; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Dengan hexa-desimal:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { color: #2196f3; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Dengan rgb():</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { color: rgb(44,62,80); }</code></pre>
+								</div>
+							</div>
+						</details>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kode Background dan Color:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="html">&lt;p style="color: #d44;"&gt;Lorem ipsum dolor sit amet, &lt;mark style="background-color: #2196f3;"&gt;consectetur adipisicing elit&lt;/mark&gt;. Tempore, iure.&lt;/p&gt;</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Output Background dan Color:</h3>
+						<div class="output zero">
+							<p style="color: #d44;">Lorem ipsum dolor sit amet, <mark style="background: #2196f3;">consectetur adipisicing elit</mark>. Tempore, iure.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- ! Pseudo-Class -->
+				<div id="ps" class="content">
+					<div class="col">
+						<h3 class="h3 blue-sea">Pseudo-Class</h3>
+						<p>Pseudo-class bukanlah sebuah property, namun ini adalah <mark>simbol selector</mark>. Pseudo-class sangatlah penting pada bahasa CSS, berikut beberapa simbol selector yang bisa kami jelaskan:</p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<!-- * Bintang -->
+							<div class="col">
+								<h3 class="h3 blue-sea">*</h3>
+								<p>Simbol selector bintang (*) digunakan untuk mengubah keseluruhan property pada CSS. Namun hati hati jika menggunakan simbol selector ini, karena bisa dibilang salah satu untuk <mark>meng-reset CSS</mark> dan biasanya juga programmer me-reset <span class="blue-sea">margin</span> dan <span class="blue-sea">padding</span> aja.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">* { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<!-- * Pagar -->
+							<div class="col">
+								<h3 class="h3 blue-sea">#x</h3>
+								<p>Simbol selector pagar (#) digunakan untuk memberi style pada namaTag yang memiliki atribut <span class="span">id</span>. Namun perlu hati hati juga, karena simbol pagar memiliki nilai spesificity yang sangat besar.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">#container { color: rgb(17,17,17); }</code></pre>
+								</div>
+							</div>
+							<!-- * Titik -->
+							<div class="col">
+								<h3 class="h3 blue-sea">.x</h3>
+								<p>Simbol selector titik(.) digunakan untuk memberi style pada namaTag yang memiliki atrbut <span class="span">class</span>.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">.container { font-size: 27px; }</code></pre>
+								</div>
+							</div>
+							<!-- * Spasi -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x y</h3>
+								<p>Simbol selector spasi digunakan untuk menargetkan ke tujuan yang lebih spesifik.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">#container .content h1 { font-weight: normal; }</code></pre>
+								</div>
+							</div>
+							<!-- * Koma -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x, y</h3>
+								<p>Simbol selector koma (,) digunakan untuk menargetkan beberapa selector yang ingin diubah lebih dari satu.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">aside, article { width: 600px; }</code></pre>
+								</div>
+							</div>
+							<!-- * Hover -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:hover</h3>
+								<p>Simbol selector :hover digunakan untuk mengubah style pada saat kursor mengarah ke elemen yang diberikan :hover tersebut.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">a:hover { color: coral; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<p class="hover">Hover Me!</p>
+								</div>
+							</div>
+							<!-- * Active -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:active</h3>
+								<p>Simbol selector :active digunakan untuk mengubah style pada saat menekan elemen sembari ditahan kursornya, maka elemen yang diberi :active akan berubah.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlihgt">
+									<pre class="data-code zero"><code class="css">a:active { font-style: italic; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<p class="active">Click Me!</p>
+								</div>
+							</div>
+							<!-- * Visited -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:visited</h3>
+								<p>Simbol selector :visited digunakan untuk mengubah style pada saat si user telah mengunjungi atau meng-klik elemen tersebut.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlihgt">
+									<pre class="data-code zero"><code class="css">a:visited { color: #ffd700; }</code></pre>
+								</div>
+							</div>
+							<!-- * Tambah -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x + y</h3>
+								<p>Simbol selector tambah (+) digunakan untuk mengubah style dengan memilih elemen terdekat setelahnya dan mengabaikan elemen sebelumnya.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">ul + p { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<ul class="ul1">
+										<li>Link 1</li>
+										<li>Link 2</li>
+										<li>Link 3</li>
+									</ul>
+									<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Reiciendis, at.</p>
+									<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Reiciendis, at.</p>
+								</div>
+							</div>
+							<!-- * Kurung Siku -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x > y</h3>
+								<p>Simbol selector kurung siku (&gt;) digunakan untuk menargetkan ke cabang selector secara langsung dan cara kerja ini hampir sama seperti simbol selector spasi, bedanya kegunaan simbol ini bermanfaat ketika bekerja dengan javascript berbasis <mark>CSS selector</mark>.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">ul li > ul li { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<ul class="ul2">
+										<li>Link 1</li>
+										<li>
+											Link 2
+											<ul>
+												<li>Link 2-1</li>
+												<li>Link 2-2</li>
+												<li>Link 2-3</li>
+											</ul>
+										</li>
+										<li>Link 3</li>
+									</ul>
+								</div>
+							</div>
+							<!-- * Gelombang -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x ~ y</h3>
+								<p>Simbol selector gelombang (~) digunakan untuk merubah semua elemen yang didahului oleh elemen sebelumnya, hal ini sama seperti simbol selector tambah (+). Tapi simbol gelombang akan merubah semua namaTag yang sama setelahnya.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">ul ~ p { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<ul class="ul3">
+										<li>Link 1</li>
+										<li>Link 2</li>
+										<li>Link 3</li>
+									</ul>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, eveniet.</p>
+									<span style="color: #111;">Span tester</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, eveniet.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, eveniet.</p>
+								</div>
+							</div>
+							<!-- * Kurung Kotak -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x[atribut:value]</h3>
+								<p>Simbol selector kurung kotak ([...]) digunakan untuk mengubah style pada namaTag yang memiliki atribut tertentu dan boleh ditambah sebuah nilai agar lebih spesifik.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">span[id=spanID] { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span id="spanID">Culpa iste corrupti quae praesentium, expedita odit, recusandae officia?</span> Sit, doloribus modi, quisquam ratione consectetur ab hic, necessitatibus animi facere porro odio.</p>
+								</div>
+							</div>
+							<!-- * First-Child -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:first-child</h3>
+								<p>Simbol selector :first-child digunakan untuk mengatur style pada namaTag pertama atau sering disebut <mark>anak pertama</mark>.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">ul li:first-child { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<ul class="ul4">
+										<li>Link 1</li>
+										<li>Link 2</li>
+										<li>Link 3</li>
+									</ul>
+								</div>
+							</div>
+							<!-- * Last-Child -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:last-child</h3>
+								<p>Simbol selector :last-child digunakan untuk mengatur style pada namaTag anak terakhir.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">ul li:last-child { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<ul class="ul5">
+										<li>Link 1</li>
+										<li>Link 2</li>
+										<li>Link 3</li>
+									</ul>
+								</div>
+							</div>
+							<!-- * Nth-Child() -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:nth-child()</h3>
+								<p>Simbol selector :nth-child() digunakan untuk mengatur style pada namaTag secara manual atau ditentukan oleh programmernya dengan sebuah nilai angka.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">ul li:nth-child(4) { color: blueviolet; } /*atau*/ ul li:nth-child(2n) { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<ul class="ul6">
+										<li>Link 1</li>
+										<li>Link 2</li>
+										<li>Link 3</li>
+										<li>Link 4</li>
+										<li>Link 5</li>
+									</ul>
+								</div>
+							</div>
+							<!-- * Checked -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:checked</h3>
+								<p>Simbol selector :checked digunakan untuk menargetkan kepada elemen yang telah diperiksa oleh elemen sebelumnya, dan biasanya :checked digunakan pada tag &lt;input&gt; yang ber-type <span class="span">radio</span> atau <span class="span">checkbox</span>.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">input[type=checkbox]:checked + label { text-transform: uppercase; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<input type="checkbox" id="check" data-checkbox>
+									<label for="check">Click a Button</label>
+								</div>
+							</div>
+							<!-- * Focus -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:focus</h3>
+								<p>Simbol selector :focus digunakan ketika kursor mouse berada pada tag &lt;input&gt; atau lainnya, maka ia akan fokus terhadap elemen tersebut.</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">input[id=focus]:focus { /*kondisi*/ }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<input type="text" placeholder="Your Name..." data-focus>
+								</div>
+							</div>
+							<!-- * Not -->
+							<div class="col">
+								<h3 class="h3 blue-sea">x:not(selector)</h3>
+								<p>Simbol selector :not digunakan untuk memilih elemen tertentu yang <mark>tidak</mark> dibolehkan untuk memiliki style atau dilarang memiliki style. Contoh kalimatnya seperti ini "saya akan mengubah semua selector kecuali yang dilarang jangan diubah".</p>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">p:not(.content) { color: blueviolet; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3 smallTxt">Outputnya:</h3>
+								<div class="output zero">
+									<div data-not>
+										<p class="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nihil.</p>
+										<p class="content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nihil.</p>
+										<p class="content3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nihil.</p>
+									</div>
+								</div>
+							</div>
+						</details>
+					</div>
+				</div>
+
+				<h2 id="h2-2" class="h2 space mt">Property CSS 2</h2>
+				<!-- ! Display -->
+				<div id="display" class="content">
+					<div class="col">
+						<h3 class="h3 blue-sea">Display</h3>
+						<p>Display adalah sebuah display yang ada di setiap namaTag, seperti &lt;div&gt; secara default memiliki display bernilai block. Ada beberapa nilai pada property display, seperti: <span class="span-yl">none</span> | <span class="span-yl">inline</span> | <span class="span-yl">block</span> | <span class="span-yl">inline-block</span> dan lain lain.</p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<dl>
+									<dt>Penjelasan mengenai nilai pada display:</dt>
+									<dd>
+										*- <span class="blue-sea">none</span>, untuk menghilangkan sebuah elemen <br>
+										*- <span class="blue-sea">inline</span>, tidak dapat menambahkan garis baru ketika dibuat (secara default) <br>
+										*- <span class="blue-sea">block</span>, dapat mengatur ukurang pada elemennya <br>
+										*- <span class="blue-sea">inline-block</span>, dapat menambahkan garis baru serta mengatur ukurannya
+									</dd>
+								</dl>
+							</div>
+						</details>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { display: inline-block; }</code></pre>
+						</div>
+					</div>
+				</div>
+
+				<!-- ! Overflow -->
+				<div id="flow" class="content">
+					<div class="col">
+						<h3 class="h3 blue-sea">Overflow</h3>
+						<p>Overflow adalah sebuah property yang digunakan untuk mengatur perilaku elemen yang kasusnya keluar dari <mark>parent-nya</mark>. Nilainya, yaitu: <span class="span-yl">visible</span> | <span class="span-yl">auto</span> | <span class="span-yl">hidden</span> | <span class="span-yl">scroll</span> dan lain lain. <br><br> <i>Apa itu parent?</i> <mark>Parent</mark> adalah sebuah pembungkus atau disebut box model yang didalamnya memiliki beberapa namaTag dan namaTag itu disebut juga sebagai <mark>anak</mark>.</p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<dl>
+									<dt>Penjelesan nilai pada property overflow:</dt>
+									<dd>
+										*- <span class="blue-sea">visible</span>, adalah nilai default disetiap property <br>
+										*- <span class="blue-sea">auto</span>, CSS akan otomatis menambahkan scroll ketika kontennnya ga cukup, tapi jika cukup maka scroll akan hilang <br>
+										*- <span class="blue-sea">hidden</span>, CSS akan menyembunyikan konten ketika melebihi parentnya <br>
+										*- <span class="blue-sea">scroll</span>, memunculkan sebuah scroll secara seperti nilai auto, bedanya ketika kontennya cukup scrollnya tetep ada
+									</dd>
+								</dl>
+							</div>
+						</details>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { overflow: auto; }</code></pre>
+						</div>
+					</div>
+					<!-- * Auto -->
+					<div class="col">
+						<h3 class="h3">Output nilai auto:</h3>
+						<div class="output zero">
+							<div class="auto" data-overflow>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, ab impedit, saepe aspernatur ex sed eum iure? Modi, quae facilis illo cum delectus ab, assumenda nam minus adipisci debitis fuga? Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+					</div>
+					<!-- * Hidden -->
+					<div class="col">
+						<h3 class="h3">Output nilai hidden:</h3>
+						<div class="output zero">
+							<div class="hide" data-overflow>
+								<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Ratione esse ad amet tenetur a! Quidem adipisci, quaerat modi fugit dignissimos illo molestias quia tempora voluptates nihil similique eum totam veniam.</p>
+							</div>
+						</div>
+					</div>
+					<!-- * Scroll -->
+					<div class="col">
+						<h3 class="h3">Output nilai scroll:</h3>
+						<div class="output zero">
+							<div class="scroll" data-overflow>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ! Float -->
+				<div id="float" class="content">
+					<div class="col">
+						<h3 class="h3 blue-sea">Float</h3>
+						<p>Float adalah property CSS yang bertugas mengatur posisi sebuah elemen dan float memiliki tiga nilai: <span class="span-yl">none</span> | <span class="span-yl">left</span> | <span class="span-yl">right</span>. Lalu ada dua hal pada float, yaitu: <mark>normal-flow</mark> dan <mark>out-of-flow</mark>.</p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<dl>
+									<dt>Floar dapa melakukan:</dt>
+									<dd>
+										*- <b>Text-Wrapping</b>, membuat teks mengelilingi gambar atau elemen <br>
+										*- <b>Image Gallery</b>, membuat serangkaian gambar menjadi sebuah galeri <br>
+										*- <b>Multi-Column Layout</b>, membuat halaman memiliki beberapa kolom, dan lain lain
+									</dd>
+								</dl>
+							</div>
+						</details>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { float: left; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<div data-float>
+								<img src="../../../img/tester.png" alt="Tester" class="floatImg">
+								<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Exercitationem nam odit libero earum, molestiae suscipit, itaque dolore ex enim incidunt consequuntur quibusdam vero quam vitae, aut. Sapiente, error! Labore, ipsum.</p>
+							</div>
+						</div>
+						<p class="mt">Tapi kekurangan dari property float ialah konten atau anak dari parent-nya akan <mark>collapse</mark> atau keluar dari parent-nya, yang membuat box model tersebut berantakan. Oleh karena itu, property float dibantu dengan property <span class="blue-sea">clear</span>.</p>
+					</div>
+				</div>
+
+				<!-- ! Clear -->
+				<div id="clear" class="content">
+					<div class="col">
+						<h3 class="h3 blue-sea">Clear</h3>
+						<p>Property clear bertugas untuk membersihkan atau menghentikan property float. Karena jika tidak dihentikan, maka akan berantakan dan tidak responsive, seperti yang kalian lihat output diatas. Nilainya: <span class="span-yl">left</span> | <span class="span-yl">right</span> | <span class="span-yl">both</span></p>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<dl>
+									<dt>Property clear terdapat tiga nilai, yaitu:</dt>
+									<dd>
+										*- <span class="blue-sea">left</span>, digunakan ketika selector mempunyai float bernilai 'left' <br>
+										*- <span class="blue-sea">right</span>, digunakan ketika selector mempunyai float bernilai 'right' <br>
+										*- <span class="blue-sea">both</span>, digunakan ketika selector mempunyai float bernilai 'left' dan 'right'
+									</dd>
+									<dt>Terdapat tiga cara untuk membersihkan atau menghentikan property float, yaitu:</dt>
+									<dd>
+										*- Menggunakan property overflow yang diberi nilai'auto' <br>
+										*- menggunakan &lt;div&gt; kosong <br>
+										*- menggunakan teknik <mark>micro clearfix</mark>
+									</dd>
+								</dl>
+							</div>
+							<div class="col">
+								<p>Untuk ngakalin dengan micro clearfix, ambil syntax dibawah ini:</p>
+								<h3 class="h3 smallTxt">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code"><code class="css">/* Micro Clearfix */
+.cf:before,
+.cf:after {
+ content: " ";
+ display: table;
+}
+.cf:after {
+ clear: both;
+}
+.cf {
+ *zoom: 1;
+}</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<p>Setelah copy dan paste syntax diatas, kalian pergi ke HTML dan cari namaTag yang memiliki property float didalamnya dan tambah kelas <mark><span class="span">.cf</span></mark></p>
+								<h3 class="h3 smallTxt">Contoh namaTag &lt;div&gt;:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="html">&lt;div class="container cf"&gt;</code></pre>
+								</div>
+							</div>
+						</details>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { clear: left; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output zero">
+							<div class="cf" data-float>
+								<img src="../../../img/tester.png" alt="Tester" class="floatImg">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti, quod tempora nam, quasi delectus, reiciendis minima minus exercitationem soluta animi vel repellendus necessitatibus. Inventore accusamus fugiat molestias rerum maiores?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ! Position -->
+				<div id="posisi" class="content">
+					<div class="col">
+						<h3 class="h3 blue-sea">Position</h3>
+						<p>Position adalah property penting juga tapi agak sulit untuk dipelajari oleh pemula. Position dapat melakukan tata letak dari elemen atau box model (parent-nya), sesuai dengan keinginan sang programmernya. Nilainya: <span class="span-yl">static</span> | <span class="span-yl">relative</span> | <span class="span-yl">absolute</span> | <span class="span-yl">fixed</span> dan lain lain. <br><br> Berikut penjelasan nilai pada property position:</p>
+					</div>
+					<!-- * Static -->
+					<div class="col">
+						<h3 class="h3 blue-sea">Static (nilai default):</h3>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<dl>
+									<dd>
+										*- Jika tidak memberikan property position pada elemen, maka static adalah nilai defaultnya <br>
+										*- Jika menggunakan selain position static, disebut sebagai <mark>non-static</mark>. Maka, akan membuat elemen menjadi berbeda dimensi dari elemen lainnya <br>
+										*- Elemen yang diberikan position non-static, dapat menggunakan property tambahan, yaitu: <span class="span-yl">top</span> | <span class="span-yl">right</span> | <span class="span-yl">bottom</span> | <span class="span-yl">left</span>
+									</dd>
+								</dl>
+								<h3 class="h3">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { position: static; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3">Outputnya:</h3>
+								<div class="output zero">
+									<div class="box1" data-box></div>
+									<div class="box2" data-box></div>
+									<div class="box3" data-box></div>
+								</div>
+							</div>
+						</details>
+					</div>
+					<!-- * Relative -->
+					<div class="col">
+						<h3 class="h3 blue-sea">Relative</h3>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<dl>
+									<dd>
+										*- Ketika menggerakkan elemen dengan posisi relative, maka ruang yang ditempati oleh elemen tersebut tetep masih ada <br>
+										*- Ketika menggerakkan elemen dengan posisi relative, maka elemen akan bergerak <mark>relatif terhadap posisi semulanya</mark> <br>
+										*- Jika memberikan property <span class="blue-sea">top</span> dan <span class="blue-sea">left</span> dengan nilai nol/null, maka elemen tersebut ga berubah dari posisi awalnya
+									</dd>
+								</dl>
+								<h3 class="h3">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector {
+  position: relative;
+  top: 2rem; left: 2rem;
+}</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3">Outputnya:</h3>
+								<div class="output zero">
+									<div class="box1" data-box></div>
+									<div class="box2" data-box data-relatif></div>
+									<div class="box3" data-box></div>
+								</div>
+							</div>
+						</details>
+					</div>
+					<!-- * Absolute -->
+					<div class="col">
+						<h3 class="h3 blue-sea">Absolute</h3>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<dl>
+									<dd>
+										*- Ketika menggerakkan elemen dengan posisi absolute, maka ruang yang ditempati oeh elemen tersebut dianggap <mark>tidak ada</mark> <br>
+										*- Ketika menggerakkan elemen dengan posisi absolute, maka elemennya bergerak relatif terhadap posisi parent-nya/box modelnya <br>
+										*- Jika memberika property <span class="blue-sea">top</span> dan <span class="blue-sea">left</span> dengan nilai nol/null, maka elemen akan menempel pada parent-nya (default parent ialah &lt;body&gt;)
+									</dd>
+								</dl>
+								<h3 class="h3">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector {
+  position: absolute;
+  top: 10px; left: 10px;
+}</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3">Outputnya:</h3>
+								<div class="output zero">
+									<div class="box1" data-box></div>
+									<div class="box2" data-box data-absolute></div>
+									<div class="box3" data-box></div>
+								</div>
+							</div>
+						</details>
+					</div>
+					<!-- * Fixed -->
+					<div class="col">
+						<h3 class="h3 blue-sea">Fixed</h3>
+						<details>
+							<summary>Selengkapnya</summary>
+							<div class="col">
+								<dl>
+									<dd>
+										*- Ketika menggerakkan elemen tersebut menggunakan <span class="blue-sea">top</span>, <span class="blue-sea">right</span>, <span class="blue-sea">bottom</span>, <span class="blue-sea">left</span>, maka dia akan selalu bergerak relatif terhadap window-nya si browser (window si browser adalah tag &lt;body&gt;) <br>
+										*- Ketika di scroll halamannya, maka elemen tersebut akan terkunci diposisi tertentu 
+									</dd>
+								</dl>
+								<h3 class="h3">Kodenya:</h3>
+								<div class="highlight">
+									<pre class="data-code zero"><code class="css">selector { position: fixed; }</code></pre>
+								</div>
+							</div>
+							<div class="col">
+								<h3 class="h3">Outputnya:</h3>
+								<p>Outputnya biasanya seperti navbar yang fix diatas atau bawah browser, dan selalu ikut ketika di scroll halamannya. Contoh lainnya seperti tombol dipojok kanan bawah pada website saya ini, karena agar mempermudah tanpa perlu scroll keatas lagi.</p>
+							</div>
+						</details>
+					</div>
+				</div>
+
+				<!-- ! Z-Index -->
+				<div id="zindex" class="content">
+					<div class="col">
+						<h3 class="h3 blue-sea">Z-Index</h3>
+						<p>Z-index digunakan untuk mengatur elemen agar tampak lebih menonjol dari elemen lainnya. Property z-index juga bisa menggunakan property tambahan, seperti: <mark>top</mark> | <mark>right</mark> | <mark>bottom</mark> | <mark>left</mark> <br><br> Nilainya sebuah angka tanpa satuan, semakin besar angka nilainya semakin menonjol atau paling depan elemen tersebut.</p>
+					</div>
+					<div class="col">
+						<h3 class="h3">Kodenya:</h3>
+						<div class="highlight">
+							<pre class="data-code zero"><code class="css">selector { z-index: 10; }</code></pre>
+						</div>
+					</div>
+					<div class="col">
+						<h3 class="h3">Outputnya:</h3>
+						<div class="output mid2">
+							<div class="box1" data-box data-zindex></div>
+							<div class="box2" data-box data-zindex></div>
+							<div class="box3" data-box data-zindex></div>
+						</div>
+					</div>
+				</div>
+
+				<h2 id="h2-3" class="h2 space mt">Box Model</h2>
+				<!-- ! Box Model -->
+				<div class="content">
+					<div class="col">
+						<p></p>
+					</div>
+				</div>
 			</article>
 		</section>
 		<!-- ! Section Finish -->
@@ -250,72 +1049,6 @@ selector { text-transform: capitalize; }</code></pre>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
 
 	<!-- ! Custom Javascript -->
-	<script type="text/javascript">
-  	// Library JS
-  	hljs.highlightAll();
-
-  	// Copy Button
-  	document.querySelectorAll('pre > code').forEach(function(codeBlock) {
-  		var button = document.createElement('button');
-
-  		button.style.display = 'none';
-
-  		var pre = codeBlock.parentNode;
-  		if(pre.parentNode.classList.contains('highlight')) {
-  			var highlight = pre.parentNode;
-
-  			highlight.parentNode.insertBefore(button, highlight);
-  		}
-  		else {
-  			pre.parentNode.insertBefore(button, pre);
-  		}
-  	});
-
-  	function addCopyButtons(clipboard) {
-  		document.querySelectorAll('pre > code').forEach(function(codeBlock) {
-  			var button = document.createElement('button');
-
-  			button.className = 'copy-code-button';
-  			button.type = 'button';
-  			button.innerText = 'Copy';
-
-  			button.addEventListener('click', function() {
-  				clipboard.writeText(codeBlock.innerText).then(function() {
-  					button.blur();
-  					button.innerText = 'Copied!';
-
-  					setTimeout(function() {
-  						button.innerText = 'Copy';
-  					}, 2000);
-  				}, function(error) {
-  					button.innerText = 'Error';
-  				});
-  			});
-  			var pre = codeBlock.parentNode;
-  			if(pre.parentNode.classList.contains('highlight')) {
-  				var highlight = pre.parentNode;
-
-  				highlight.parentNode.insertBefore(button,highlight);
-  			}
-  			else {
-  				pre.parentNode.insertBefore(button, pre);
-  			}
-  		});
-  	}
-  	if(navigator && navigator.clipboard) {
-  		addCopyButtons(navigator.clipboard);
-  	}
-  	else {
-  		var script = document.createElement('script');
-
-  		script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
-  		script.integrity =  'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
-  		script.crossOrigin = 'anonymous';
-  		script.onload = function() {
-  			addCopyButtons(clipboard);
-  		};
-  		document.body.appendChild(script);
-  	}
-  </script>
+	<script src="../../../js/copy.js"></script>
 </body>
 </html>

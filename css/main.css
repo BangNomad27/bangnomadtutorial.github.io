@@ -33,6 +33,7 @@ html {
 }
 body {
 	background: var(--bgColor);
+	transition: .2s;
 }
 section {
 	position: relative;
@@ -61,10 +62,20 @@ section {
 	border-radius: var(--borderRadius);
 	cursor: pointer;
 }
+.color .color-icon:hover .bx { background: transparent; }
 body.colorBg {
 	/*background: linear-gradient(lightgreen, #44bd32);*/
-	background: #fff;
+	/*background: #fff;*/
+	background: #111;
+	color: #fff;
+	transition: .2s linear;
 }
+body.colorBg header :is(.brand, ul li a) { color: #fff; }
+body.colorBg header.sticky { background: #111; box-shadow: 0 1rem 2rem rgba(241,242,246,.3); }
+body.colorBg .opening :is(.titleBx .title, .titleBx .version, .share .title) { color: #fff; }
+body.colorBg .opening .tableBx .table tr { color: var(--mainColor); }
+body.colorBg :is(.heading) { color: #fff; }
+body.colorBg .notice .noteBx { color: var(--mainColor); }
 /* * Button Home */
 .btn-home {
 	position: fixed;
@@ -131,7 +142,7 @@ body.colorBg {
 	border-bottom: .1rem solid #ccc;
 }
 .btn-box button {
-	background: transparent;
+	background: #f1f2f6; /*transparent*/
 	border: none; outline: none;
 	margin-right: 2rem;
 	padding: 1.4rem .6rem;
@@ -163,6 +174,7 @@ body.colorBg {
 /* Intro Js */
 .tooltip * {
 	font-size: 2rem;
+	color: var(--mainColor);
 }
 
 /* ! Header */

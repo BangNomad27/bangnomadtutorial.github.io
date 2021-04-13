@@ -332,7 +332,7 @@ article .h2 {
 	margin-bottom: .5rem;
 	font-size: var(--fontSize3);
 }
-.content :is(.col p:first-child, .col p, .col .line) {
+.content :is(.col, .col p:first-child, .col dl, .col p, .col .line) {
 	font-size: var(--fontSize2);
 	text-align: var(--justify);
 }
@@ -358,7 +358,9 @@ article .h2 {
 }
 /* ! More Class */
 .content .col .h3.bigTxt { font-size: var(--fontSize3); }
+.content .col .h3.smallTxt { font-size: var(--fontSize2); }
 .output.mid { height: 9rem; }
+.output.mid2 { height: 22.2rem; }
 .space { letter-spacing: .1rem; }
 .mt{ margin-top: var(--margin2); }
 .blue-sea { color: var(--color1); }
